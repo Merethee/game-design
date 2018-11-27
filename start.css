@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box; 
+}
+
+p {
+    color: white; 
+    text-align: center; 
+    margin-top: 17px; 
+}
+
+a {
+    text-decoration: none; 
+}
+
+.krone p:hover {
+    color: #EEBB54
+}
+
+.logo {
+    position: relative;
+    top: 40px; 
+    bottom: 150px; 
+    margin: 0 auto; 
+}
+
+.logo img {
+    width: 700px; 
+    height: auto; 
+}
+
+.krone {
+    margin: 0 auto; 
+    position: relative; 
+    top: 120px; 
+}
+
+.krone p {
+    position: relative; 
+    top: -80px; 
+  
+    font-size: 1.3rem;   
+    text-transform: uppercase; 
+}
+
+.krone img {
+    width: 250px; 
+    height: auto; 
+    filter: drop-shadow(0 1px 2px #222);
+}
+
+.knapp {
+    width: 180px; 
+    height: 60px;
+
+    background-color: #003E5D; 
+    margin: 10px auto; 
+    border-radius: 50px; 
+
+    position: relative;
+    top: 100px; 
+    filter: drop-shadow(0 1px 2px #222);
+}
+
+.knapp p {
+    font-size: .8rem; 
+    margin-top: 20px; 
+}
+
+.earth {
+    position: absolute;
+    left: 0; 
+    bottom: 0;
+
+}
+
+.earth img {
+    width: 400px;
+    height: auto; 
+}
