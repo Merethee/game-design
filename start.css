@@ -78,24 +78,24 @@ a {
     left: 3px; 
 }
 
-.konge {
+.konge-top {
     position: absolute;
     left: 0; 
     bottom: -10px;
 }
 
-.konge img {
+.konge-top img {
     width: 300px;
     height: auto; 
 }
 
-.butler {
+.butler-top {
     position: absolute;
     right: 0; 
     bottom: -10px; 
 }
 
-.butler img {
+.butler-top img {
     width: 300px;
     height: auto;
 }
