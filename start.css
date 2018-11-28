@@ -78,13 +78,24 @@ a {
     left: 3px; 
 }
 
-.earth {
+.konge {
     position: absolute;
     left: 0; 
-    bottom: 0;
+    bottom: -10px;
 }
 
-.earth img {
-    width: 400px;
+.konge img {
+    width: 300px;
     height: auto; 
+}
+
+.butler {
+    position: absolute;
+    right: 0; 
+    bottom: -10px; 
+}
+
+.butler img {
+    width: 300px;
+    height: auto;
 }
