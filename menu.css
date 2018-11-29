@@ -20,16 +20,23 @@
     width: 850px;
     height: 700px;
     background-color: #B4977D;
+    margin-top: 50px;
+    margin-left: 1450px;
+    transition: ease 0.5s;
+}
+
+.menuwrapper1 {
     margin: 50px auto;
+    transition: ease 0.5s;
 }
 
 /* white border inside menu window */
 .menuborder {
     width: 780px;
-    height: 600px;
+    height: 595px;
     border: 2px solid white;
     margin: auto;
-    margin-top: 32px;
+    margin-top: 37px;
 }
 
 /* menu header */
