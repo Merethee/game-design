@@ -2,6 +2,7 @@
     box-sizing: border-box; 
 }
 
+/* kart */
 .kart {
     position: absolute; 
     top: 20px; 
@@ -22,6 +23,24 @@
 .butler-kart img{
     width: 140px;
     height: auto;
+}
+
+.kart #nord {
+    width: 580px;
+    height: 350px;
+    border: 2px solid red; 
+    position: absolute;
+    top: 0; 
+    cursor: pointer;
+}
+
+.kart .ost {
+    width: 400px;
+    height: 550px;
+    border: 2px solid green; 
+    position: absolute;
+    top: 0; 
+    left: 600px; 
 }
 
 /* start spill rute */ 
@@ -80,18 +99,6 @@
     cursor: pointer;
     z-index: 3; 
 }
-
-/* 
-.klar-btn:after {
-    content: ""; 
-    width: 120px;
-    height: 30px; 
-    border: 2px solid #003E5D;
-    border-radius: 20px; 
-    position: absolute;
-    top: 4px;  
-    left: 4px; 
-} */
 
 .klar-btn p {
     margin-left: 25px; 

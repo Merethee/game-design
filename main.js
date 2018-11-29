@@ -19,3 +19,9 @@ function showBadges() {
 function removeWindow() {
        instruks.style.visibility = "hidden"; 
 } 
+
+
+$(document).ready(function() {
+    $("#nord").zoomTarget();
+});
+
