@@ -20,17 +20,52 @@
     border-radius: 3px;
 }
 
-.merker {
+p {
+    font-size: .7rem; 
+    position: absolute;
+    top: -2px; 
+    left: 76px; 
+}
+
+
+.total {
     position: absolute;
     left: 0; 
     top: 200px; 
     margin: 10px; 
 }
-.merker img {
+
+.total .europa {
+    cursor: pointer;
+}
+
+.merker {
+    position: absolute;
+    left: 0; 
+    top: 340px; 
+    margin: 10px; 
+}
+
+.merker img,
+.total img {
     width: 60px; 
     height: auto;
     display: block; 
     margin: 10px; 
+}
+
+.fly img {
+    width: 55px; 
+    transform: rotate(10deg); 
+}
+
+.penger {
+    position: relative;
+    left: 5px; 
+}
+
+.penger img {
+    width: 50px; 
 }
 
 .kart {
