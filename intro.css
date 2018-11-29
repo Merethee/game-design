@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box; 
-}
+* { box-sizing: border-box; }
 
 body {
     margin: 0;
@@ -18,9 +16,7 @@ body {
     top: 3%;
 }
 
-.logo img {
-    width: 220px;
-}
+.logo img { width: 220px; }
 
 /* Wrapper rundt konge, snakkebobler og butler */
 .wrapper {
@@ -31,15 +27,10 @@ body {
     justify-content: space-evenly;
     align-items: flex-end;
     padding: 0 5% 7% 5%;
-
-    border: 1px solid yellow;
 }
 
 /* Konge og Butler */
-.konge, .butler {
-    width: 170px;
-    border: 1px solid red;
-}
+.konge, .butler { width: 170px; }
 
 .konge img, .butler img {
     width: 170px;
@@ -50,9 +41,10 @@ body {
 .snakkeboble-left, .snakkeboble-right {
     width: 200px;
     height: auto;
-
-    border: 1px solid red;
 }
+
+.snakkeboble-left { margin-bottom: 420px; }
+.snakkeboble-right { margin-bottom: 370px; }
 
 .snakkeboble-konge, .snakkeboble-butler {
     width: 200px;
@@ -64,6 +56,7 @@ body {
     position: relative;
 }
 
+/* Piler på snakkebobler */ 
 .snakkeboble-konge::after, .snakkeboble-butler::after  {
 	content: '';
 	position: absolute;
@@ -85,6 +78,19 @@ body {
     border-right: 0;
 }
 
+#konge-tekst-1 {
+    width: 170px;
+    position: absolute;
+    margin: 20px;
+}
+
+#butler-tekst-1 {
+    width: 170px;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 20px;
+}
+
 /* Hopp-over-knapp */
 button {
     color: #003e5d;
@@ -100,13 +106,10 @@ button {
     position: absolute;
     right: 5%;
     bottom: 5%;
-    box-shadow: 0px 2px 15px #719eac;
-
-    /* Lager border på innsiden */
-    /* box-shadow: 0 0 0 5px #003e5d, inset 0 0 0 1px white; */
+    box-shadow: 0px 1px 10px #719eac;
 }
 
-/* Lager border på innsiden - samme som box-shadow^ */
+/* Lager border på innsiden */
 button::after {
     content: "";
     position: absolute;
