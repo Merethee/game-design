@@ -43,7 +43,7 @@
     content: ""; 
     width: 420px;
     height: 300px;
-    border: 2px solid green; 
+    border: 2px solid #003E5D;
     padding: 20px; 
     position: absolute;
     top: 17px;  
@@ -66,37 +66,42 @@
 }
 
 .klar-btn {
-    width: 150px; 
-    height: 50px;
+    width: 130px; 
+    height: 40px;
 
-    background-color: #003E5D; 
+    border: 2px solid #003E5D;
     margin: 10px auto; 
-    border-radius: 50px; 
+    border-radius: 25px; 
 
-    position: relative;
-    top: 30px; 
-    filter: drop-shadow(0 1px 2px #222);
+    position: absolute;
+    top: 280px; 
+    left: 180px; 
+    box-shadow: 0px 1px 2px #c7c7c7;
     cursor: pointer;
     z-index: 3; 
 }
 
+/* 
 .klar-btn:after {
     content: ""; 
-    width: 100px;
-    height: 1px; ; 
-    border: 1px solid #fff;
-    padding: 20px; 
-    border-radius: 50px; 
+    width: 120px;
+    height: 30px; 
+    border: 2px solid #003E5D;
+    border-radius: 20px; 
     position: absolute;
     top: 4px;  
     left: 4px; 
-}
+} */
 
 .klar-btn p {
-    color: white;
-    margin-left: 32px; 
-    margin-top: 15px; 
-    font-size: .8rem;  
+    margin-left: 25px; 
+    margin-top: 10px; 
+    font-size: .7rem;  
+}
+
+.klar-btn:hover {
+    background: #003E5D;
+    color: white; 
 }
 
 /* ham meny */ 
