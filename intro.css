@@ -8,17 +8,42 @@ body {
     background-color: #c5dde4;
 }
 
-/* Kongen */
-.konge {
+/* Logo */
+.logo {
     width: 200px;
-    height: auto;
+    height: 50px;
     position: absolute;
-    left: 10%;
+    left: 42%;
+    top: 3%;
 }
 
-/* Butler */
-.butler {
-    width: 200px;
+.logo img {
+    width: 220px;
+}
+
+/* Kongen og Butler */
+.konge, .butler {
+    width: 170px;
     height: auto;
     position: absolute;
+    bottom: 10%; 
+
+    border: 1px solid red;
+}
+
+.konge { left: 20%; }
+.butler { right: 20%;}
+
+.konge img, .butler img {
+    width: 170px;
+}
+
+/* Hopp-over-knapp */
+button {
+    width: 130px;
+    height: 40px;
+    border-radius: 25px;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
 }
