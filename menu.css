@@ -18,7 +18,7 @@
 /* menu box div */
 .menuwrapper {
     width: 850px;
-    height: 700px;
+    height: 670px;
     background-color: #B4977D;
     margin-top: 50px;
     margin-left: 1450px;
@@ -26,7 +26,7 @@
 }
 
 .menuwrapper1 {
-    margin: 50px auto;
+    margin: auto;
     transition: ease 0.5s;
 }
 
