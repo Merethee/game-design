@@ -121,3 +121,12 @@ button::after {
     /* border: 1px solid white; */
     border-radius: 20px;
 }
+
+button span:after {
+    content: '\00bb';
+    opacity: 0;
+}
+
+button:hover span:after {
+    opacity: 1;
+}
