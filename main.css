@@ -2,7 +2,104 @@
     box-sizing: border-box; 
 }
 
+.kart {
+    position: absolute; 
+    top: 20px; 
+    left: 250px;
+}
 
+.kart img {
+    width: 90%; 
+    height: auto;
+}
+
+.butler-kart {
+    position: absolute; 
+    bottom: -10px;
+    right: 50px; 
+}
+
+.butler-kart img{
+    width: 140px;
+    height: auto;
+}
+
+/* start spill rute */ 
+
+.instruks {
+    width: 500px; 
+    height: 380px; 
+    background: #fff; 
+    filter: drop-shadow(0 1px 2px #222);
+    z-index: 1; 
+
+    position: absolute;
+    top: 210px; 
+    left: 450px; 
+    visibility: visible; 
+}
+
+.instruks:after {
+    content: ""; 
+    width: 420px;
+    height: 300px;
+    border: 2px solid green; 
+    padding: 20px; 
+    position: absolute;
+    top: 17px;  
+    left: 17px; 
+}
+
+.instruks h3 {
+    margin-left: 60px; 
+    margin-top: 50px; 
+}
+
+.instruks ol {
+    margin-top: 40px; 
+}
+
+.instruks li {
+    margin-left: 60px; 
+    font-size: .8rem; 
+    line-height: 1.4rem;  
+}
+
+.klar-btn {
+    width: 150px; 
+    height: 50px;
+
+    background-color: #003E5D; 
+    margin: 10px auto; 
+    border-radius: 50px; 
+
+    position: relative;
+    top: 30px; 
+    filter: drop-shadow(0 1px 2px #222);
+    cursor: pointer;
+    z-index: 3; 
+}
+
+.klar-btn:after {
+    content: ""; 
+    width: 100px;
+    height: 1px; ; 
+    border: 1px solid #fff;
+    padding: 20px; 
+    border-radius: 50px; 
+    position: absolute;
+    top: 4px;  
+    left: 4px; 
+}
+
+.klar-btn p {
+    color: white;
+    margin-left: 32px; 
+    margin-top: 15px; 
+    font-size: .8rem;  
+}
+
+/* ham meny */ 
 .meny {
     position: absolute; 
     right: 0; 
@@ -20,6 +117,7 @@
     border-radius: 3px;
 }
 
+/* tekst */
 p {
     font-size: .7rem; 
     position: absolute;
@@ -44,6 +142,8 @@ p {
     top: 10px; 
     left: 83px; 
 }
+
+/* merkene */ 
 
 .europa .pil {
     position: absolute;
@@ -97,13 +197,3 @@ p {
     width: 50px; 
 }
 
-.kart {
-    position: absolute; 
-    top: 20px; 
-    left: 250px;
-}
-
-.kart img {
-    width: 90%; 
-    height: auto;
-}

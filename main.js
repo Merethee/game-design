@@ -1,8 +1,11 @@
 
 var europa = document.querySelector(".pil");
 var merker = document.querySelector(".merker");
+var klar = document.querySelector(".klar-btn");
+var instruks = document.querySelector(".instruks"); 
 
 europa.addEventListener("click", showBadges);
+klar.addEventListener("click", removeWindow);
 
 function showBadges() {
 
@@ -13,4 +16,6 @@ function showBadges() {
         }
     } 
 
-
+function removeWindow() {
+       instruks.style.visibility = "hidden"; 
+} 
