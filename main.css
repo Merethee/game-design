@@ -50,19 +50,19 @@
     left: 17px; 
 }
 
-.instruks h3 {
+.instruks h4 {
     margin-left: 60px; 
     margin-top: 50px; 
 }
 
 .instruks ol {
-    margin-top: 40px; 
+    margin-top: -20px; 
 }
 
 .instruks li {
     margin-left: 60px; 
     font-size: .8rem; 
-    line-height: 1.4rem;  
+    line-height: 1em; 
 }
 
 .klar-btn {
@@ -74,8 +74,9 @@
     border-radius: 50px; 
 
     position: relative;
-    top: 30px; 
+ 
     filter: drop-shadow(0 1px 2px #222);
+    top: 10px; 
     cursor: pointer;
     z-index: 3; 
 }
@@ -99,23 +100,6 @@
     font-size: .8rem;  
 }
 
-/* ham meny */ 
-.meny {
-    position: absolute; 
-    right: 0; 
-    margin: 15px; 
-    cursor: pointer;
-}
-
-.meny span {
-    background: #222; 
-    display: block;
-    width: 33px;
-    height: 4px;
-
-    margin-bottom: 5px;
-    border-radius: 3px;
-}
 
 /* tekst */
 p {

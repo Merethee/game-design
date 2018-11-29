@@ -23,6 +23,7 @@
     margin-top: 50px;
     margin-left: 1450px;
     transition: ease 0.5s;
+    z-index: 100;
 }
 
 .menuwrapper1 {
