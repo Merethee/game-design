@@ -23,15 +23,43 @@
 p {
     font-size: .7rem; 
     position: absolute;
+}
+
+.merker p {
+    top: 10px; 
+    left: 83px; 
+}
+
+.penger p {
     top: -2px; 
     left: 76px; 
 }
 
+.fly p {
+    top: 53px; 
+    left: 82px; 
+}
+
+.europa p {
+    top: 96px; 
+    left: 82px; 
+}
+
+.europa .pil {
+    position: absolute;
+    top: 125px;
+    left: 20px; 
+}
+
+.europa .pil img {
+    width: 20px;
+    height: auto; 
+}
 
 .total {
     position: absolute;
     left: 0; 
-    top: 200px; 
+    top: 280px; 
     margin: 10px; 
 }
 
@@ -42,8 +70,9 @@ p {
 .merker {
     position: absolute;
     left: 0; 
-    top: 340px; 
+    top: 440px; 
     margin: 10px; 
+    display: none; 
 }
 
 .merker img,

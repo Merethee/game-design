@@ -1,19 +1,15 @@
 
-let europa = document.querySelector(".europa");
-let merker = document.querySelector(".merker");
-
-var visesMerkene = false; 
+var europa = document.querySelector(".pil");
+var merker = document.querySelector(".merker");
 
 europa.addEventListener("click", showBadges);
 
 function showBadges() {
 
-        if(merker.style.display === "none") {
-            visesMerkene = false;
-            merker.style.display = "block"; 
+        if(merker.style.display !== "block") { 
+            merker.style.display = "block";  
         } else {
             merker.style.display = "none"
-            visesMerkene = ture; 
         }
     } 
 
