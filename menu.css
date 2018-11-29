@@ -36,6 +36,10 @@ ul {
 
 li {
     margin-bottom: 1.5rem;
+}
+
+li a {
+    text-decoration: none;
     color: #422120;
 }
 
@@ -47,7 +51,7 @@ li:nth-child(5) {
     margin-top: 4rem;
 }
 
-li:hover {
+li a:hover {
     cursor: pointer;
     color: white;
 }
