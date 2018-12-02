@@ -10,9 +10,11 @@ klar.addEventListener("click", removeWindow);
 function showBadges() {
 
         if(merker.style.display !== "block") { 
-            merker.style.display = "block";  
+            merker.style.display = "block"; 
+            merker.style.transition = "all .5s ease-in-out"; 
         } else {
             merker.style.display = "none"
+          
         }
     } 
 
