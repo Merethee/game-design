@@ -25,6 +25,8 @@ function removeWindow() {
 } 
 
 // Zoom på kart 
+
+
 $(document).ready(function() {
     $("#nord").zoomTarget();
     $("#sor").zoomTarget();
@@ -32,3 +34,14 @@ $(document).ready(function() {
     $("#vest").zoomTarget();
 });
 
+// dot vises når man trykker på nord 
+
+var nord = document.querySelector("#nord");
+var dot = document.querySelector(".dot");
+var zoom = document.querySelector(".zoomTarget"); 
+
+nord.addEventListener("click", dotShow);
+
+function dotShow() {
+        dot.style.visibility = "visible"; 
+}

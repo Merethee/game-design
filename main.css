@@ -63,16 +63,17 @@
 
 /* spørsmål prikkene */
 
-#nord .dot {
+ #nord .dot {
     position: absolute;
-    top: 250px;
-    left: 370px; 
+    top: 255px;
+    left: 376px; 
 
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50px;
-    background: red; 
+    background: black; 
     cursor: pointer;
+    visibility: hidden;
 }
 
 /* start spill rute */ 
