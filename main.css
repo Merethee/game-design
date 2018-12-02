@@ -3,6 +3,7 @@
 }
 
 /* kart */
+
 .kart {
     position: absolute; 
     top: 20px; 
@@ -28,19 +29,50 @@
 .kart #nord {
     width: 580px;
     height: 350px;
-    border: 2px solid red; 
     position: absolute;
     top: 0; 
     cursor: pointer;
 }
 
-.kart .ost {
+.kart #ost {
     width: 400px;
-    height: 550px;
-    border: 2px solid green; 
+    height: 300px;
     position: absolute;
-    top: 0; 
-    left: 600px; 
+    top: 250px; 
+    left: 500px; 
+    cursor: pointer;
+}
+
+.kart #vest {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 300px; 
+    left: 100px; 
+    cursor: pointer;
+}
+
+.kart #sor {
+    width:650px;
+    height: 150px;
+    position: absolute;
+    top: 550px; 
+    left: 130px; 
+    cursor: pointer;
+}
+
+/* spørsmål prikkene */
+
+#nord .dot {
+    position: absolute;
+    top: 250px;
+    left: 370px; 
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background: red; 
+    cursor: pointer;
 }
 
 /* start spill rute */ 
@@ -112,6 +144,7 @@
 }
 
 /* ham meny */ 
+
 .meny {
     position: absolute; 
     right: 0; 
@@ -130,6 +163,7 @@
 }
 
 /* tekst */
+
 p {
     font-size: .7rem; 
     position: absolute;
@@ -185,7 +219,6 @@ p {
     top: 440px; 
     margin: 10px; 
     display: none; 
-
 }
 
 .merker img,

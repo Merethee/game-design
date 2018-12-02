@@ -7,6 +7,7 @@ var instruks = document.querySelector(".instruks");
 europa.addEventListener("click", showBadges);
 klar.addEventListener("click", removeWindow);
 
+// skjuler merkene før click 
 function showBadges() {
 
         if(merker.style.display !== "block") { 
@@ -17,13 +18,17 @@ function showBadges() {
           
         }
     } 
-
+    
+// instruks popup 
 function removeWindow() {
        instruks.style.visibility = "hidden"; 
 } 
 
-
+// Zoom på kart 
 $(document).ready(function() {
     $("#nord").zoomTarget();
+    $("#sor").zoomTarget();
+    $("#ost").zoomTarget();
+    $("#vest").zoomTarget();
 });
 
