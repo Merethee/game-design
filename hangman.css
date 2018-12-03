@@ -44,13 +44,7 @@ body {
     border-top: 1px solid #eebb54;
 }
 
-
-
-
-
-
 /* DOT STYLE FILL UP */
-
 hr {
     position: absolute;
     width: 90px;
@@ -58,8 +52,6 @@ hr {
     left: 380px;
     border-top: 2px solid #9cb9c2;
 }
-
-
 
 .dottystyle ul {
     position: relative;
@@ -111,8 +103,6 @@ hr {
 
 
 /* Hovedboksen */
-
-
 main {
     background-color: white;
     width: 850px;
@@ -123,7 +113,6 @@ main {
 }
 
 /* Det som forklarer hvor du er i kontintenet */
-
 .sor {
     position: absolute;
     top: 35px;
@@ -133,7 +122,6 @@ main {
 }
 
 /* Bildene */
-
 img {
     display: block;
     margin-left: auto;
@@ -176,24 +164,6 @@ h1 {
 }
 
 .button:hover {
-    border: 1px solid white;
-}
-
-.button1 {
-    padding: 12px;
-    width: 265px;
-    height: 50px;
-    background-color: #003e5d;
-    margin: 5px;
-    flex-direction: row;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 200;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px #003e5d;
-}
-
-.button1:hover {
     border: 1px solid white;
 }
 
