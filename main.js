@@ -14,7 +14,6 @@ function showBadges() {
             merker.style.display = "block"; 
             merker.style.opacity = "1"; 
             merker.style.transition = "opacity 2.0s ease-in";
- 
         } else {
             merker.style.display = "none"; 
         }
