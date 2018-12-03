@@ -14,48 +14,44 @@ function showBadges() {
             merker.style.display = "block"; 
             merker.style.transition = "all 1s ease-in-out"; 
         } else {
-            merker.style.display = "none"
-          
+            merker.style.display = "none"; 
+    
         }
     } 
     
+var allowMapInput = false;
+
 // instruks popup 
 function removeWindow() {
-       instruks.style.visibility = "hidden"; 
+       instruks.style.visibility = "hidden";
+       allowMapInput = true; 
 } 
 
 // Zoom på kart 
-$(document).ready(function() {
-    $("#nord").zoomTarget();
-    $("#sor").zoomTarget();
-    $("#ost").zoomTarget();
-    $("#vest").zoomTarget();
+var kart = document.querySelector(".kart");
+
+// Zoom Nord
+var nord = document.querySelector("#nord");
+nord.addEventListener("click", function (event) {
+    if(allowMapInput) kart.classList.toggle('zoom-nord');
 });
 
-// dot/meny/merker vises når man trykker på nord 
+// Zoom Sør
+var sor = document.querySelector("#sor");
+sor.addEventListener("click", function (event) {
+    if(allowMapInput) kart.classList.toggle('zoom-sor');
+});
 
-var nord = document.querySelector("#nord");
-var dot = document.querySelector(".dot");
-var meny = document.querySelector(".zoom"); 
-var total = document.querySelector(".zoom-to")
 
-var zoom = document.querySelector(".zoomTarget"); 
+// Zoom Øst
+var ost = document.querySelector("#ost");
+ost.addEventListener("click", function (event) {
+    if(allowMapInput) kart.classList.toggle('zoom-ost');
+});
 
-nord.addEventListener("click", elmShow);
 
-elmVises = false; 
-
-function elmShow() {
-
-    if(elmVises === false) {
-        elmVises = true; 
-        dot.style.visibility = "visible"; 
-        meny.style.visibility = "visible"; 
-        total.style.visibility = "visible"; 
-    } else {
-        elmVises = false; 
-        dot.style.visibility = "hidden"; 
-        meny.style.visibility = "hidden"; 
-        total.style.visibility = "hidden"; 
-    }
-}
+// Zoom Vest
+var vest = document.querySelector("#vest");
+vest.addEventListener("click", function (event) {
+    if(allowMapInput) kart.classList.toggle('zoom-vest');
+});
