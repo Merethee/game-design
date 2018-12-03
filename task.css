@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+<<<<<<< HEAD
     background-color: #c5dde4;
 }
 
@@ -113,12 +114,14 @@ hr {
 /* Hovedboksen */
 
 
+
 main {
     background-color: white;
     width: 850px;
     height: 700px;
     margin: 50px auto;
     position: relative;
+<<<<<<< HEAD
     box-shadow: 2px 2px 4px #9cb9c2;
 }
 
@@ -134,25 +137,45 @@ main {
 
 /* Bildene */
 
+=======
+
+}
+
+>>>>>>> master
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+<<<<<<< HEAD
     padding-top: 79px;
+=======
+    padding-top: 50px;
+    border: 1px solid red;
+>>>>>>> master
 }
 
 h1 {
     text-align: center;
+<<<<<<< HEAD
     font-weight: 400;
     font-size: 1.5rem;
 }
 
 /* Svar bokser */
+=======
+    border: 1px solid red;
+    font-weight: 300;
+}
+
+>>>>>>> master
 #svar {
     display: flex;
     justify-content: center;
     text-align: center;
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 }
 
 #svar1 {
@@ -162,13 +185,20 @@ h1 {
 }
 
 .button {
+<<<<<<< HEAD
     padding: 12px;
     width: 265px;
     height: 50px;
+=======
+    padding: 6px;
+    width: 270px;
+    height: 55px;
+>>>>>>> master
     background-color: #003e5d;
     flex-direction: row;
     margin: 5px;
     color: white;
+<<<<<<< HEAD
     font-size: 1.2rem;
     font-weight: 200;
     border-radius: 5px;
@@ -183,10 +213,23 @@ h1 {
     padding: 12px;
     width: 265px;
     height: 50px;
+=======
+    font-size: 2rem;
+    border: 1px solid red;
+    font-weight: 200;
+    border-radius: 3px;
+}
+
+.button1 {
+    padding: 6px;
+    width: 270px;
+    height: 55px;
+>>>>>>> master
     background-color: #003e5d;
     margin: 5px;
     flex-direction: row;
     color: white;
+<<<<<<< HEAD
     font-size: 1.2rem;
     font-weight: 200;
     border-radius: 5px;
@@ -219,4 +262,16 @@ h1 {
     position: absolute;
     left: 27px;
     bottom: 14px;
+=======
+    font-size: 2rem;
+    border: 1px solid red;
+    font-weight: 200;
+    border-radius: 3px;
+}
+
+.butler-img {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+>>>>>>> master
 }

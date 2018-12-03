@@ -37,7 +37,6 @@ a {
 .krone p {
     position: relative; 
     top: -80px; 
-  
     font-size: 1.3rem;   
     text-transform: uppercase; 
 }
@@ -59,21 +58,44 @@ a {
     position: relative;
     top: 100px; 
     filter: drop-shadow(0 1px 2px #222);
+ 
 }
 
 .knapp p {
-    font-size: .8rem; 
-    margin-top: 20px; 
+    font-size: .9rem; 
+    margin-top: 18px; 
 }
 
-.earth {
+.knapp::after {
+    content: ""; 
+    width: 132px;
+    height: 10px; ; 
+    border: 1px solid #fff;
+    padding: 20px; 
+    border-radius: 50px; 
+    position: absolute;
+    top: 4px;  
+    left: 3px; 
+}
+
+.konge-top {
     position: absolute;
     left: 0; 
-    bottom: 0;
-
+    bottom: -10px;
 }
 
-.earth img {
-    width: 400px;
+.konge-top img {
+    width: 300px;
     height: auto; 
+}
+
+.butler-top {
+    position: absolute;
+    right: 0; 
+    bottom: -10px; 
+}
+
+.butler-top img {
+    width: 300px;
+    height: auto;
 }

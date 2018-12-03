@@ -1,3 +1,24 @@
 * {
     box-sizing: border-box; 
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #c5dde4;
+}
+
+/* Kongen */
+.konge {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    left: 10%;
+}
+
+/* Butler */
+.butler {
+    width: 200px;
+    height: auto;
+    position: absolute;
+}
