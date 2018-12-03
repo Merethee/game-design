@@ -10,6 +10,7 @@ body {
     background-color: #c5dde4;
 }
 
+/* Linjene rundt boksen */
 .vl {
     position: absolute;
     border-left: 1px solid #eebb54;
@@ -109,7 +110,7 @@ hr {
 }
 
 
-
+/* Hovedboksen */
 
 
 main {
@@ -121,6 +122,8 @@ main {
     box-shadow: 2px 2px 4px #9cb9c2;
 }
 
+/* Det som forklarer hvor du er i kontintenet */
+
 .sor {
     position: absolute;
     top: 35px;
@@ -128,6 +131,8 @@ main {
     font-size: 20px;
     font-weight: 300;
 }
+
+/* Bildene */
 
 img {
     display: block;
@@ -142,6 +147,7 @@ h1 {
     font-size: 1.5rem;
 }
 
+/* Svar bokser */
 #svar {
     display: flex;
     justify-content: center;
@@ -190,6 +196,8 @@ h1 {
 .button1:hover {
     border: 1px solid white;
 }
+
+/* Det som viser hva du får i belønning om du klarer oppgaven, merke og penger */
 
 .reward {
     position: absolute;
