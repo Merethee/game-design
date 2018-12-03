@@ -12,7 +12,7 @@ function showBadges() {
 
         if(merker.style.display !== "block") { 
             merker.style.display = "block"; 
-            merker.style.transition = "all .5s ease-in-out"; 
+            merker.style.transition = "all 1s ease-in-out"; 
         } else {
             merker.style.display = "none"
           
@@ -25,8 +25,6 @@ function removeWindow() {
 } 
 
 // Zoom på kart 
-
-
 $(document).ready(function() {
     $("#nord").zoomTarget();
     $("#sor").zoomTarget();
@@ -34,14 +32,30 @@ $(document).ready(function() {
     $("#vest").zoomTarget();
 });
 
-// dot vises når man trykker på nord 
+// dot/meny/merker vises når man trykker på nord 
 
 var nord = document.querySelector("#nord");
 var dot = document.querySelector(".dot");
+var meny = document.querySelector(".zoom"); 
+var total = document.querySelector(".zoom-to")
+
 var zoom = document.querySelector(".zoomTarget"); 
 
-nord.addEventListener("click", dotShow);
+nord.addEventListener("click", elmShow);
 
-function dotShow() {
+elmVises = false; 
+
+function elmShow() {
+
+    if(elmVises === false) {
+        elmVises = true; 
         dot.style.visibility = "visible"; 
+        meny.style.visibility = "visible"; 
+        total.style.visibility = "visible"; 
+    } else {
+        elmVises = false; 
+        dot.style.visibility = "hidden"; 
+        meny.style.visibility = "hidden"; 
+        total.style.visibility = "hidden"; 
+    }
 }
