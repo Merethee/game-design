@@ -83,7 +83,6 @@ hr {
     text-indent: -999em;
     /* make the text accessible to screen readers */
     position: absolute;
-
 }
 
 .dottystyle li a {
@@ -140,7 +139,6 @@ h1 {
     display: flex;
     justify-content: center;
     text-align: center;
-
 }
 
 #svar1 {
@@ -168,7 +166,6 @@ h1 {
 }
 
 /* Det som viser hva du får i belønning om du klarer oppgaven, merke og penger */
-
 .reward {
     position: absolute;
     bottom: 20px;
