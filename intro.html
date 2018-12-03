@@ -5,17 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Introduksjon</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="mal.css">
     <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 </head>
 <body>
 
-    <div class="konge">
-        <img src="img/Konge.png" alt="Kongen stående i blå dress">
+    <!-- Logo -->
+    <div class="logo">
+        <img src="img/logo.png">
     </div>
-    <div class="butler">
-        <img src="img/Butler.png" alt="Butler stående i svart dress">
+
+    <div class="wrapper">
+        <!-- Konge -->
+        <div class="konge">
+            <img src="img/Konge.png" alt="Kongen stående i blå dress">
+        </div>
+
+        <!-- Snakkebobler -->
+        <div class="snakkeboble-venstre">
+            <div class="snakkeboble-konge"> 
+                <p id="konge-tekst-1">Hei, Butler Bernhard.
+                    <br>Jeg har et oppdrag til deg.
+                </p>
+                <p class="neste" name="button" onclick="nesteButlerBoble()" value="neste">&raquo;</p>
+            </div>
+        </div>
+
+        <div class="snakkeboble-hoyre">
+            <div class="snakkeboble-butler"> 
+                <p id="butler-tekst-1">Hei, Deres Majestet.</p>
+                <p class="neste" name="button" onclick="nesteKongeBoble()" value="neste">&raquo;</p>
+            </div>
+        </div>
+
+        <!-- Butler -->
+        <div class="butler">
+            <img src="img/Butler.png" alt="Butler stående i svart dress">
+        </div>
     </div>
+
+    <!-- Hopp-over-knapp -->
+    <a  href="start.html">
+    <button class="hopp-over"><span>Hopp over</span></button>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="intro.js"></script>
     
 </body>
 </html>
