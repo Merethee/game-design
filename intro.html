@@ -24,15 +24,20 @@
         </div>
 
         <!-- Snakkebobler -->
-        <div class="snakkeboble-left">
+        <div class="snakkeboble-venstre">
             <div class="snakkeboble-konge"> 
-                <p id="konge-tekst-1">Hei, Butler Bernhard.</p>
+                <p id="konge-tekst-1">Hei, Butler Bernhard.
+                    <br>Jeg har et oppdrag til deg.
+                </p>
+                <p class="neste" name="button" onclick="nesteButlerBoble()" value="enter">&raquo;</p>
             </div>
         </div>
 
-        <div class="snakkeboble-right">
-            <div class="snakkeboble-butler"> </div>
-            <p id="butler-tekst-1">Hei, Deres Majestet.</p>
+        <div class="snakkeboble-hoyre">
+            <div class="snakkeboble-butler"> 
+                <p id="butler-tekst-1">Hei, Deres Majestet.</p>
+                <p class="neste" name="button" onclick="nesteKongeBoble()" value="enter">&raquo;</p>
+            </div>
         </div>
 
         <!-- Butler -->
@@ -45,6 +50,9 @@
     <a  href="start.html">
     <button class="hopp-over"><span>Hopp over</span></button>
     </a>
+
+    <!-- JavaScript -->
+    <script src="intro.js"></script>
     
 </body>
 </html>

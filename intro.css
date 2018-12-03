@@ -38,13 +38,13 @@ body {
 }
 
 /* snakkebobler */
-.snakkeboble-left, .snakkeboble-right {
+.snakkeboble-venstre, .snakkeboble-hoyre {
     width: 200px;
     height: auto;
 }
 
-.snakkeboble-left { margin-bottom: 420px; }
-.snakkeboble-right { margin-bottom: 370px; }
+.snakkeboble-venstre { margin-bottom: 420px; }
+.snakkeboble-hoyre { margin-bottom: 370px; }
 
 .snakkeboble-konge, .snakkeboble-butler {
     width: 200px;
@@ -54,6 +54,12 @@ body {
     color: black;
     font-size: .7rem;
     position: relative;
+    box-shadow: 0px 1px 10px #719eac;
+    transition: all 2s;
+}
+
+.snakkeboble-fadeout {
+    opacity: 0;
 }
 
 /* Piler på snakkebobler */ 
@@ -63,36 +69,41 @@ body {
 	top: 55%;
 	border: 20px solid transparent;
 	margin-top: -23px;
-	margin-left: -17px;
+    margin-left: -17px;
 }
 
-.snakkeboble-konge::after {
-    left: 5px;
-    border-right-color: white;
-    border-left: 0;
-}
+.snakkeboble-konge::after { left: 5px; border-right-color: white; border-left: 0; }
+.snakkeboble-butler::after { right: -10px; border-left-color: white; border-right: 0; }
 
-.snakkeboble-butler::after {
-	right: -10px;
-	border-left-color: white;
-    border-right: 0;
-}
+.snakkeboble-konge { display: block; }
 
-#konge-tekst-1 {
+.snakkeboble-butler { display: none; }
+
+#konge-tekst-1, #butler-tekst-1 {
     width: 170px;
     position: absolute;
     margin: 20px;
 }
 
-#butler-tekst-1 {
-    width: 170px;
+.neste {
+    font-size: 1rem;
     position: absolute;
-    margin-top: -80px;
-    margin-left: 20px;
+    right: 25px;
+    bottom: -15px;
+    transition: .5s;
+    cursor: pointer;
 }
+
+.neste:hover {
+    right: 22px;
+}
+
+
+
 
 /* Hopp-over-knapp */
 button {
+    cursor: pointer;
     color: #003e5d;
     font-size: .8rem;
 
@@ -101,7 +112,6 @@ button {
     border-radius: 25px;
     border: none;
     background-color: white;
-    /* background-color: #003e5d; */
 
     position: absolute;
     right: 5%;
@@ -125,8 +135,10 @@ button::after {
 button span:after {
     content: '\00bb';
     opacity: 0;
+    transition: .5s;
 }
 
 button:hover span:after {
     opacity: 1;
+    margin-left: 8px;
 }
