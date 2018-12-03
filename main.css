@@ -2,18 +2,281 @@
     box-sizing: border-box; 
 }
 
-html,
-body {
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
+/* kart */
 
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;  
-    font-size: 16pt; 
-    background-color: #C5DDE4;
-
-    display: flex; 
-    flex-direction: column; 
-    flex-wrap: wrap; 
+.kart {
+    position: absolute; 
+    top: 20px; 
+    left: 250px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
 }
+
+.kart.zoom-nord {
+    transform: scale(1.5) translate(160px, 170px);
+}
+
+.kart.zoom-sor {
+    transform: scale(1.8) translate(0, -300px);
+}
+
+.kart.zoom-ost {
+    transform: scale(1.8) translate(-200px, -50px);
+}
+
+.kart.zoom-vest{
+    transform: scale(2) translate(200px, -100px);
+}
+
+.kart img {
+    width: 90%; 
+    height: 700px;
+}
+
+.butler-kart {
+    position: absolute; 
+    bottom: -10px;
+    right: 50px; 
+}
+
+.butler-kart img{
+    width: 140px;
+    height: auto;
+}
+
+.kart #nord {
+    width: 580px;
+    height: 350px;
+    position: absolute;
+    top: 0; 
+    /* background: rgba(0, 81, 255, 0.158); */
+}
+
+.kart #ost {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 250px; 
+    left: 550px; 
+}
+
+.kart #vest {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 300px; 
+    left: 100px; 
+}
+
+.kart #sor {
+    width:650px;
+    height: 150px;
+    position: absolute;
+    top: 550px; 
+    left: 130px; 
+}
+
+/* spørsmål prikkene */
+
+ /* #nord .dot {
+    position: absolute;
+    top: 255px;
+    left: 395px; 
+
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: black; 
+    cursor: pointer;
+    visibility: hidden;
+} */
+
+/* start spill rute */ 
+
+.instruks {
+    width: 500px; 
+    height: 380px; 
+    background: #fff; 
+    filter: drop-shadow(0 1px 2px #222);
+    z-index: 1; 
+
+    position: absolute;
+    top: 210px; 
+    left: 450px; 
+    visibility: visible; 
+}
+
+.instruks:after {
+    content: ""; 
+    width: 420px;
+    height: 300px;
+    border: 2px solid #003E5D;
+    padding: 20px; 
+    position: absolute;
+    top: 17px;  
+    left: 17px; 
+}
+
+.instruks h4 {
+    margin-left: 60px; 
+    margin-top: 50px; 
+}
+
+.instruks ol {
+    margin-top: -20px; 
+}
+
+.instruks li {
+    margin-left: 60px; 
+    font-size: .8rem; 
+    line-height: 1em; 
+}
+
+.klar-btn {
+    width: 130px; 
+    height: 40px;
+    border: 2px solid #003E5D;
+    margin: 10px auto; 
+    border-radius: 25px; 
+
+    position: absolute;
+    top: 280px; 
+    left: 180px; 
+    box-shadow: 0px 1px 2px #c7c7c7;
+    cursor: pointer;
+    z-index: 3; 
+}
+
+.klar-btn p {
+    margin-left: 25px; 
+    margin-top: 10px; 
+    font-size: .7rem;  
+}
+
+.klar-btn:hover {
+    background: #003E5D;
+    color: white; 
+}
+
+/* ham meny */ 
+
+.meny {
+    position: absolute; 
+    right: 0; 
+    margin: 15px; 
+    cursor: pointer;
+    z-index: 1200; 
+}
+
+.meny span {
+    background: #222; 
+    display: block;
+    width: 33px;
+    height: 4px;
+
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+/* tekst */
+
+p {
+    font-size: .7rem; 
+    position: absolute;
+    
+}
+
+.total p {
+    font-weight: 700; 
+}
+
+.penger p {
+    top: -2px; 
+    left: 76px; 
+}
+
+.fly p {
+    top: 63px; 
+    left: 82px;
+}
+
+.europa p {
+    top: 115px; 
+    left: 82px; 
+}
+
+.merker p {
+    position: relative;
+    top: -15px; 
+    left: 83px; 
+    font-weight: 700; 
+}
+
+/* merkene */ 
+
+.europa .pil {
+    position: absolute;
+    top: 150px;
+    left: 20px; 
+    cursor: pointer;
+}
+
+.europa .pil img {
+    width: 20px;
+    height: auto; 
+}
+
+.total {
+    position: absolute;
+    left: 0; 
+    top: 270px; 
+    margin: 10px; 
+    z-index: 1000; 
+}
+
+.merker {
+    position: absolute;
+    left: 0; 
+    top: 440px; 
+    margin: 10px; 
+    z-index: 1000; 
+    display: none; 
+    opacity: 0;
+}
+
+.merker img,
+.total img {
+    width: 60px; 
+    height: auto;
+    display: block; 
+    margin: 10px; 
+    z-index: 1000; 
+}
+
+.merker img {
+    margin-top: 20px; 
+    margin-bottom: -30px; 
+    filter: drop-shadow( 0px 1px 1px #96bac4);
+}
+
+.total img {
+    margin-bottom: 20px; 
+    filter: drop-shadow( 0px 1px 1px #96bac4);
+
+}
+
+.fly img {
+    width: 55px; 
+    transform: rotate(10deg); 
+}
+
+.penger {
+    position: relative;
+    left: 5px; 
+}
+
+.penger img {
+    width: 50px; 
+}
+
+
