@@ -73,8 +73,12 @@ body {
 .snakkeboble-konge { display: block; }
 .snakkeboble-butler { display: none; }
 
-.snakkeboble-konge:active {
-    opacity: 0;
+@keyframes fadeout {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    70% { opacity: .7;}
+    100% { opacity: 0; 
+        display: none; }
 }
 
 #konge-tekst-1, #butler-tekst-1 {
