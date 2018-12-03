@@ -1,0 +1,18 @@
+/* task window */
+
+.hangmanwrapper {
+    height: 700px;
+    width: 850px;
+    margin: 50px auto;
+    background-color: white;
+    z-index: 100;
+}
+
+/*  border inside task window */
+.border {
+    width: 780px;
+    height: 595px;
+    border: 1px solid #eebb54;
+    margin: auto;
+    margin-top: 37px;
+}
