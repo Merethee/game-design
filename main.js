@@ -13,9 +13,9 @@ function showBadges() {
         if(merker.style.display !== "block") { 
             merker.style.display = "block"; 
             merker.style.transition = "all 1s ease-in-out"; 
+            allowMapInput = true; 
         } else {
             merker.style.display = "none"; 
-    
         }
     } 
     
@@ -42,13 +42,11 @@ sor.addEventListener("click", function (event) {
     if(allowMapInput) kart.classList.toggle('zoom-sor');
 });
 
-
 // Zoom Øst
 var ost = document.querySelector("#ost");
 ost.addEventListener("click", function (event) {
     if(allowMapInput) kart.classList.toggle('zoom-ost');
 });
-
 
 // Zoom Vest
 var vest = document.querySelector("#vest");

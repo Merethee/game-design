@@ -213,6 +213,7 @@ p {
     position: absolute;
     top: 150px;
     left: 20px; 
+    cursor: pointer;
 
 }
 
@@ -226,10 +227,6 @@ p {
     left: 0; 
     top: 280px; 
     margin: 10px; 
-}
-
-.total .europa {
-    cursor: pointer;
 }
 
 .merker {
