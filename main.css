@@ -42,6 +42,7 @@
 .butler-kart img{
     width: 140px;
     height: auto;
+    filter: drop-shadow( 0px 1px 1px #96bac4);
 }
 
 .kart #nord {
@@ -105,25 +106,24 @@
     left: 450px; 
     visibility: visible; 
 }
-
+ 
 .instruks:after {
     content: ""; 
-    width: 420px;
-    height: 300px;
+    width: 470px;
+    height: 350px;
     border: 2px solid #003E5D;
-    padding: 20px; 
     position: absolute;
-    top: 17px;  
-    left: 17px; 
+    top: 14px;  
+    left: 13px; 
 }
 
 .instruks h4 {
     margin-left: 60px; 
-    margin-top: 50px; 
+    margin-top: 60px; 
 }
 
 .instruks ol {
-    margin-top: -20px; 
+    margin-top: -10px; 
 }
 
 .instruks li {
@@ -158,32 +158,11 @@
     color: white; 
 }
 
-/* ham meny */ 
-
-.meny {
-    position: absolute; 
-    right: 0; 
-    margin: 15px; 
-    cursor: pointer;
-    z-index: 1200; 
-}
-
-.meny span {
-    background: #222; 
-    display: block;
-    width: 33px;
-    height: 4px;
-
-    margin-bottom: 5px;
-    border-radius: 3px;
-}
-
 /* tekst */
 
 p {
     font-size: .7rem; 
     position: absolute;
-    
 }
 
 .total p {
@@ -262,7 +241,6 @@ p {
 .total img {
     margin-bottom: 20px; 
     filter: drop-shadow( 0px 1px 1px #96bac4);
-
 }
 
 .fly img {
