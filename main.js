@@ -1,11 +1,9 @@
 
 var pil = document.querySelector(".pil");
 var merker = document.querySelector(".merker");
-var klar = document.querySelector(".klar-btn");
-var instruks = document.querySelector(".instruks"); 
 
 pil.addEventListener("click", showBadges);
-klar.addEventListener("click", removeWindow);
+
 
 // skjuler merkene før click 
 function showBadges() {
@@ -19,21 +17,16 @@ function showBadges() {
     
 var allowMapInput = false;
 
+var klar = document.querySelector(".klar-btn");
+var instruks = document.querySelector(".instruks"); 
+
+klar.addEventListener("click", removeWindow);
+
 // instruks popup 
 function removeWindow() {
        instruks.style.visibility = "hidden";
        allowMapInput = true; 
 } 
-
-// Vis instruks popup kun en gang
-
-// (function() {
-//     var visited = localStorage.getItem('visited');
-//     if (!visited) {
-//         instruks.style.visibility = "visible";
-//         localStorage.setItem('visited', true);
-//     }
-// })();
 
 // Zoom på kart 
 var kart = document.querySelector(".kart");

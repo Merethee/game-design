@@ -17,7 +17,7 @@
 }
 
 .kart.zoom-sor {
-    transform: scale(1.8) translate(0, -300px);
+    transform: scale(1.8) translate(60px, -300px);
 }
 
 .kart.zoom-ost {
@@ -78,19 +78,40 @@
 }
 
 /* spørsmål prikkene */
-
- /* #nord .dot {
-    position: absolute;
-    top: 255px;
-    left: 395px; 
-
+.dot {
     width: 15px;
     height: 15px;
     border-radius: 50px;
-    background: black; 
-    cursor: pointer;
-    visibility: hidden;
-} */
+    cursor: pointer;   
+}
+
+#sor .dot {
+    position: absolute;
+    top: 70px;
+    left: 80px; 
+    background: blue; 
+} 
+
+#ost .dot {
+    position: absolute;
+    top: 200px;
+    left: 100px; 
+    background: green; 
+} 
+
+#vest .dot {
+    position: absolute;
+    top: 110px;
+    left: 320px; 
+    background: purple; 
+} 
+
+#nord .dot {
+    position: absolute;
+    top: 160px;
+    left: 20px; 
+    background: red; 
+}
 
 /* start spill rute */ 
 
@@ -102,7 +123,7 @@
     z-index: 1; 
 
     position: absolute;
-    top: 210px; 
+    top: 190px; 
     left: 450px; 
     visibility: visible; 
 }
@@ -119,7 +140,7 @@
 
 .instruks h4 {
     margin-left: 60px; 
-    margin-top: 60px; 
+    margin-top: 50px; 
 }
 
 .instruks ol {
@@ -129,7 +150,7 @@
 .instruks li {
     margin-left: 60px; 
     font-size: .8rem; 
-    line-height: 1em; 
+    line-height: 1.4em; 
 }
 
 .klar-btn {
@@ -140,7 +161,7 @@
     border-radius: 25px; 
 
     position: absolute;
-    top: 280px; 
+    top: 290px; 
     left: 180px; 
     box-shadow: 0px 1px 2px #c7c7c7;
     cursor: pointer;
@@ -220,7 +241,7 @@ p {
     margin: 10px; 
     z-index: 1000; 
     display: none; 
-    opacity: 0;
+
 }
 
 .merker img,
