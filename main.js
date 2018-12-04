@@ -51,6 +51,27 @@ ost.addEventListener("click", function (event) {
 
 // Zoom Vest
 var vest = document.querySelector("#vest");
+
 vest.addEventListener("click", function (event) {
     if(allowMapInput) kart.classList.toggle('zoom-vest');
 });
+
+    // Vest Europa - spørsmål dot
+
+    var vestDot = document.querySelector(".vDot"); 
+    var hangman = document.querySelector(".hangmanwrapper"); 
+
+    vestDot.addEventListener("click", questionVest);
+
+    function questionVest() {
+        kart.classList.remove('zoom-vest');
+        
+
+        if(hangman.style.display !== "block") { 
+            hangman.style.display = "block"; 
+        } else {
+           hangman.style.display = "none"; 
+        }
+      
+    }    
+
