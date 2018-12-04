@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Introduksjon</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="mal.css">
     <link rel="stylesheet" href="intro.css">
-    <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 </head>
 <body>
@@ -26,18 +26,42 @@
 
         <!-- Snakkebobler -->
         <div class="snakkeboble-venstre">
-            <div class="snakkeboble-konge"> 
+            <!-- Første snakkeboble -->
+            <div class="snakkeboble-konge-1"> 
                 <p id="konge-tekst">Hei, Butler Bernhard.
                     <br>Jeg har et oppdrag til deg.
                 </p>
-                <p class="neste" name="button" onclick="nesteButlerBoble()" value="neste">&raquo;</p>
+                <!-- name="button" onclick="nesteButlerBoble()" value="neste" -->
+                <p class="neste-konge" name="button" onclick="nesteButlerBoble()" value="neste">&raquo;</p>
             </div>
+            <!-- Andre snakkeboble -->
+            <div class="snakkeboble-konge-2"> 
+                <p id="konge-tekst">Som ny konge trenger jeg informasjon fra de andre landene.
+                </p>
+                <!-- name="button" onclick="nesteButlerBoble()" value="neste" -->
+                <p class="neste-konge" name="button" onclick="nesteButlerBoble2()" value="neste">&raquo;</p>
+            </div>
+            <!-- Tredje snakkeboble -->
+            <div class="snakkeboble-konge-3"> 
+                    <p id="konge-tekst">God tur!
+                    </p>
+                    <!-- name="button" onclick="nesteButlerBoble()" value="neste" -->
+                    <p class="neste-konge" name="button" onclick="nesteButlerBoble3()" value="neste">&raquo;</p>
+                </div>
         </div>
 
         <div class="snakkeboble-hoyre">
-            <div class="snakkeboble-butler"> 
+            <!-- Første snakkeboble -->
+            <div class="snakkeboble-butler-1"> 
                 <p id="butler-tekst">God dag, Deres Majestet.</p>
-                <p class="neste" name="button" onclick="nesteKongeBoble()" value="neste">&raquo;</p>
+                <!-- name="button" onclick="nesteKongeBoble()" value="neste" -->
+                <p class="neste-butler" name="button" onclick="nesteKongeBoble()" value="neste">&raquo;</p>
+            </div>
+            <!-- Andre snakkeboble -->
+            <div class="snakkeboble-butler-2"> 
+                <p id="butler-tekst">OK!</p>
+                <!-- name="button" onclick="nesteKongeBoble()" value="neste" -->
+                <p class="neste-butler" name="button" onclick="nesteKongeBoble2()" value="neste">&raquo;</p>
             </div>
         </div>
 
@@ -45,6 +69,7 @@
         <div class="butler">
             <img src="img/Butler.png" alt="Butler stående i svart dress">
         </div>
+        <div class="shadow"></div>
     </div>
 
     <!-- Hopp-over-knapp -->

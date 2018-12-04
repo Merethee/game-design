@@ -1,53 +1,33 @@
-let kongeBoble = document.querySelector(".snakkeboble-konge");
-let butlerBoble = document.querySelector(".snakkeboble-butler");
-let nesteBoble = document.querySelector(".neste");
-let counter = document.querySelector(".neste"), count = 0;
-
-if(count == 1) {
-    nesteBoble = true;
-    kongeBoble.classList.toggle("ut-venstre");
-    butlerBoble.classList.toggle("inn-hoyre");
-
-} if(count == 2) {
-
-    nesteKongeBoble;
-    nesteKongeTekst;
-} if(count == 3) {
-
-    // nesteButlerBoble;   
-} if(count == 4) {
-    
-    nesteKongeBoble;
-    nesteButlerTekst; 
-}
-
+let kongeBoble = document.querySelector(".snakkeboble-konge-1");
+let butlerBoble = document.querySelector(".snakkeboble-butler-1");
+let kongeBoble2 = document.querySelector(".snakkeboble-konge-2");
+let butlerBoble2 = document.querySelector(".snakkeboble-butler-2");
+let kongeBoble3 = document.querySelector(".snakkeboble-konge-3");
 
 // Viser butlerens svar til kongen
-/* function nesteButlerBoble() {
+function nesteButlerBoble() {
     
-    kongeBoble.classList.toggle("ut-venstre");
-    butlerBoble.classList.toggle("inn-hoyre");
-} */
-
-function countClick() {
-    count += 1;
-    console.log("you clicked");
+    kongeBoble.classList.add("ut-venstre");
+    butlerBoble.classList.add("inn-hoyre");
 }
 
 // Viser kongens svar til butleren
 function nesteKongeBoble() {
 
-    butlerBoble.classList.toggle("inn-hoyre");
-    butlerBoble.classList.toggle("ut-hoyre");
-
-    kongeBoble.classList.toggle("ut-venstre");
-    kongeBoble.classList.toggle("inn-venstre");
+    butlerBoble.classList.remove("inn-hoyre");
+    kongeBoble.style.display = ("none");
+    kongeBoble2.classList.add("inn-venstre");
 }
 
-function nesteKongeTekst() {
-    document.querySelector("#konge-tekst").innerHTML = "Som ny konge trenger jeg informasjon fra de andre landene.";
+// Viser butlerens neste svar til kongen
+function nesteButlerBoble2() {
+    
+    kongeBoble2.classList.remove("inn-venstre");
+    butlerBoble2.classList.add("inn-hoyre");
 }
-
-function nesteButlerTekst() {
-    document.querySelector("#butler-tekst").innerHTML = "OK!";
+function nesteKongeBoble2() {
+    
+    butlerBoble2.classList.remove("inn-hoyre");
+    butlerBoble2.classList.add("ut-hoyre");
+    kongeBoble3.classList.add("inn-venstre");
 }
