@@ -97,10 +97,15 @@ h2 {
     margin-left: 2.5px;
     margin-right: 2.5px;
     justify-content: space-around;
+    z-index: 100;
 }
 
 .optbox p {
     margin: auto auto;
+}
+
+.optbox:hover {
+    cursor: pointer;
 }
 
 /* Rewards for oppgaven */
@@ -138,4 +143,14 @@ h2 {
     display: inline-block;
     margin: 0;
     margin-bottom: -4px;
+}
+
+/* page counter */
+.pagecounter {
+    /*border: 1px solid red;*/
+    color: #003e5d;
+    display: inline block;
+    position: absolute;
+    right: 25px;
+    bottom: 2px;
 }
