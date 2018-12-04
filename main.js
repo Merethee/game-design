@@ -12,8 +12,6 @@ function showBadges() {
 
         if(merker.style.display !== "block") { 
             merker.style.display = "block"; 
-            merker.style.opacity = "1"; 
-            merker.style.transition = "opacity 2.0s ease-in";
         } else {
             merker.style.display = "none"; 
         }
@@ -26,6 +24,16 @@ function removeWindow() {
        instruks.style.visibility = "hidden";
        allowMapInput = true; 
 } 
+
+// Vis instruks popup kun en gang
+
+// (function() {
+//     var visited = localStorage.getItem('visited');
+//     if (!visited) {
+//         instruks.style.visibility = "visible";
+//         localStorage.setItem('visited', true);
+//     }
+// })();
 
 // Zoom på kart 
 var kart = document.querySelector(".kart");
