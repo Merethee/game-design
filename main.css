@@ -17,7 +17,7 @@
 }
 
 .kart.zoom-sor {
-    transform: scale(1.8) translate(0, -300px);
+    transform: scale(1.8) translate(60px, -300px);
 }
 
 .kart.zoom-ost {
@@ -42,6 +42,7 @@
 .butler-kart img{
     width: 140px;
     height: auto;
+    filter: drop-shadow( 0px 1px 1px #96bac4);
 }
 
 .kart #nord {
@@ -77,19 +78,40 @@
 }
 
 /* spørsmål prikkene */
-
- /* #nord .dot {
-    position: absolute;
-    top: 255px;
-    left: 395px; 
-
+.dot {
     width: 15px;
     height: 15px;
     border-radius: 50px;
-    background: black; 
-    cursor: pointer;
-    visibility: hidden;
-} */
+    cursor: pointer;   
+}
+
+#sor .dot {
+    position: absolute;
+    top: 70px;
+    left: 80px; 
+    background: blue; 
+} 
+
+#ost .dot {
+    position: absolute;
+    top: 200px;
+    left: 100px; 
+    background: green; 
+} 
+
+#vest .dot {
+    position: absolute;
+    top: 110px;
+    left: 320px; 
+    background: purple; 
+} 
+
+#nord .dot {
+    position: absolute;
+    top: 160px;
+    left: 20px; 
+    background: red; 
+}
 
 /* start spill rute */ 
 
@@ -101,20 +123,19 @@
     z-index: 1; 
 
     position: absolute;
-    top: 210px; 
+    top: 190px; 
     left: 450px; 
     visibility: visible; 
 }
-
+ 
 .instruks:after {
     content: ""; 
-    width: 420px;
-    height: 300px;
+    width: 470px;
+    height: 350px;
     border: 2px solid #003E5D;
-    padding: 20px; 
     position: absolute;
-    top: 17px;  
-    left: 17px; 
+    top: 14px;  
+    left: 13px; 
 }
 
 .instruks h4 {
@@ -123,13 +144,13 @@
 }
 
 .instruks ol {
-    margin-top: -20px; 
+    margin-top: -10px; 
 }
 
 .instruks li {
     margin-left: 60px; 
     font-size: .8rem; 
-    line-height: 1em; 
+    line-height: 1.4em; 
 }
 
 .klar-btn {
@@ -140,7 +161,7 @@
     border-radius: 25px; 
 
     position: absolute;
-    top: 280px; 
+    top: 290px; 
     left: 180px; 
     box-shadow: 0px 1px 2px #c7c7c7;
     cursor: pointer;
@@ -158,32 +179,11 @@
     color: white; 
 }
 
-/* ham meny */ 
-
-.meny {
-    position: absolute; 
-    right: 0; 
-    margin: 15px; 
-    cursor: pointer;
-    z-index: 1200; 
-}
-
-.meny span {
-    background: #222; 
-    display: block;
-    width: 33px;
-    height: 4px;
-
-    margin-bottom: 5px;
-    border-radius: 3px;
-}
-
 /* tekst */
 
 p {
     font-size: .7rem; 
     position: absolute;
-    
 }
 
 .total p {
@@ -241,7 +241,7 @@ p {
     margin: 10px; 
     z-index: 1000; 
     display: none; 
-    opacity: 0;
+
 }
 
 .merker img,
@@ -262,7 +262,6 @@ p {
 .total img {
     margin-bottom: 20px; 
     filter: drop-shadow( 0px 1px 1px #96bac4);
-
 }
 
 .fly img {

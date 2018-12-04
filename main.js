@@ -1,26 +1,26 @@
 
 var pil = document.querySelector(".pil");
 var merker = document.querySelector(".merker");
-var klar = document.querySelector(".klar-btn");
-var instruks = document.querySelector(".instruks"); 
 
 pil.addEventListener("click", showBadges);
-klar.addEventListener("click", removeWindow);
+
 
 // skjuler merkene før click 
 function showBadges() {
 
         if(merker.style.display !== "block") { 
             merker.style.display = "block"; 
-            merker.style.opacity = "1"; 
-            merker.style.transition = "opacity 2.0s ease-in";
- 
         } else {
             merker.style.display = "none"; 
         }
     } 
     
 var allowMapInput = false;
+
+var klar = document.querySelector(".klar-btn");
+var instruks = document.querySelector(".instruks"); 
+
+klar.addEventListener("click", removeWindow);
 
 // instruks popup 
 function removeWindow() {

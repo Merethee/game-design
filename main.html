@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hovedsiden</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="mal.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="menu.css">
@@ -16,18 +17,18 @@
         <span></span>
         <span></span>
     </div>
-    <section class="menuwrapper">
-        <div class="menuborder">
+    <div class="menuwrapper">
             <h1>MENY</h1>
             <ul>
                 <li><a href="#">Butikk</a></li>
                 <li><a href="#">Innstillinger</a></li>
                 <li><a href="#">Instrukser</a></li>
                 <li><a href="#">Avslutt spillet</a></li>
-                <li class="resumebtn"><a href="#">Fortsett spillet</a></li>
+                <div class="resumebtn">
+                <li><a href="#">Fortsett spillet</a></li>
+            </div>
             </ul>
         </div>
-    </section>
     <div class="instruks">
         <h4>Slik starter du</h4>
         <ol>
@@ -65,10 +66,18 @@
     </div>
     <div class="kart">
         <img src="img/map.png" alt="kart">
-            <div id="nord"></div>
-            <div id="ost"></div>
-            <div id="vest"></div>
-            <div id="sor"></div>
+            <div id="nord">
+                <div class="dot"></div>
+            </div>
+            <div id="ost">
+                <div class="dot"></div>
+            </div>
+            <div id="vest">
+                <div class="dot"></div>
+            </div>
+            <div id="sor">
+                <div class="dot"></div>
+            </div>
         </div>
     </div>
     <div class="butler-kart">
