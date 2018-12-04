@@ -65,7 +65,6 @@ vest.addEventListener("click", function (event) {
 
     function questionVest() {
         kart.classList.remove('zoom-vest');
-        
 
         if(hangman.style.display !== "block") { 
             hangman.style.display = "block"; 

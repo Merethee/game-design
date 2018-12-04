@@ -82,7 +82,8 @@
     width: 15px;
     height: 15px;
     border-radius: 50px;
-    cursor: pointer;   
+    cursor: pointer; 
+    filter: drop-shadow(0 1px 2px #222);  
 }
 
 #sor .dot {
@@ -108,7 +109,23 @@
     top: 110px;
     left: 320px; 
     background: purple; 
+    filter: drop-shadow(0 1px 2px #222);
 
+    animation: scale 2s ease-in-out infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 #nord .dot {
