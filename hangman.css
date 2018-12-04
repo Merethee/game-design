@@ -105,9 +105,7 @@
 
 /* Rewards for oppgaven */
 
-.reward {
-    /*border: 1px solid red;*/
-}
+
 .hangmanwrapper  .reward {
     border: 1px solid red;
     position: absolute;
