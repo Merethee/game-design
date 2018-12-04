@@ -99,12 +99,17 @@
     background: green; 
 } 
 
-#vest .dot {
+.vDot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    cursor: pointer;   
     position: absolute;
     top: 110px;
     left: 320px; 
     background: purple; 
-} 
+
+}
 
 #nord .dot {
     position: absolute;
