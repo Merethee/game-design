@@ -2,15 +2,35 @@
     box-sizing: border-box; 
 }
 
+/* kart */
+
 .kart {
     position: absolute; 
     top: 20px; 
     left: 250px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.kart.zoom-nord {
+    transform: scale(1.5) translate(160px, 170px);
+}
+
+.kart.zoom-sor {
+    transform: scale(1.8) translate(0, -300px);
+}
+
+.kart.zoom-ost {
+    transform: scale(1.8) translate(-200px, -50px);
+}
+
+.kart.zoom-vest{
+    transform: scale(2) translate(200px, -100px);
 }
 
 .kart img {
     width: 90%; 
-    height: auto;
+    height: 700px;
 }
 
 .butler-kart {
@@ -23,6 +43,53 @@
     width: 140px;
     height: auto;
 }
+
+.kart #nord {
+    width: 580px;
+    height: 350px;
+    position: absolute;
+    top: 0; 
+    /* background: rgba(0, 81, 255, 0.158); */
+}
+
+.kart #ost {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 250px; 
+    left: 550px; 
+}
+
+.kart #vest {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 300px; 
+    left: 100px; 
+}
+
+.kart #sor {
+    width:650px;
+    height: 150px;
+    position: absolute;
+    top: 550px; 
+    left: 130px; 
+}
+
+/* spørsmål prikkene */
+
+ /* #nord .dot {
+    position: absolute;
+    top: 255px;
+    left: 395px; 
+
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: black; 
+    cursor: pointer;
+    visibility: hidden;
+} */
 
 /* start spill rute */ 
 
@@ -43,7 +110,7 @@
     content: ""; 
     width: 420px;
     height: 300px;
-    border: 2px solid green; 
+    border: 2px solid #003E5D;
     padding: 20px; 
     position: absolute;
     top: 17px;  
@@ -66,45 +133,61 @@
 }
 
 .klar-btn {
-    width: 150px; 
-    height: 50px;
-
-    background-color: #003E5D; 
+    width: 130px; 
+    height: 40px;
+    border: 2px solid #003E5D;
     margin: 10px auto; 
-    border-radius: 50px; 
+    border-radius: 25px; 
 
-    position: relative;
- 
-    filter: drop-shadow(0 1px 2px #222);
-    top: 10px; 
+    position: absolute;
+    top: 280px; 
+    left: 180px; 
+    box-shadow: 0px 1px 2px #c7c7c7;
     cursor: pointer;
     z-index: 3; 
 }
 
-.klar-btn:after {
-    content: ""; 
-    width: 100px;
-    height: 1px; ; 
-    border: 1px solid #fff;
-    padding: 20px; 
-    border-radius: 50px; 
-    position: absolute;
-    top: 4px;  
-    left: 4px; 
-}
-
 .klar-btn p {
-    color: white;
-    margin-left: 32px; 
-    margin-top: 15px; 
-    font-size: .8rem;  
+    margin-left: 25px; 
+    margin-top: 10px; 
+    font-size: .7rem;  
 }
 
+.klar-btn:hover {
+    background: #003E5D;
+    color: white; 
+}
+
+/* ham meny */ 
+
+.meny {
+    position: absolute; 
+    right: 0; 
+    margin: 15px; 
+    cursor: pointer;
+    z-index: 1200; 
+}
+
+.meny span {
+    background: #222; 
+    display: block;
+    width: 33px;
+    height: 4px;
+
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
 
 /* tekst */
+
 p {
     font-size: .7rem; 
     position: absolute;
+    
+}
+
+.total p {
+    font-weight: 700; 
 }
 
 .penger p {
@@ -113,26 +196,29 @@ p {
 }
 
 .fly p {
-    top: 53px; 
-    left: 82px; 
+    top: 63px; 
+    left: 82px;
 }
 
 .europa p {
-    top: 96px; 
+    top: 115px; 
     left: 82px; 
 }
 
 .merker p {
-    top: 10px; 
+    position: relative;
+    top: -15px; 
     left: 83px; 
+    font-weight: 700; 
 }
 
 /* merkene */ 
 
 .europa .pil {
     position: absolute;
-    top: 128px;
+    top: 150px;
     left: 20px; 
+    cursor: pointer;
 }
 
 .europa .pil img {
@@ -143,12 +229,9 @@ p {
 .total {
     position: absolute;
     left: 0; 
-    top: 280px; 
+    top: 270px; 
     margin: 10px; 
-}
-
-.total .europa {
-    cursor: pointer;
+    z-index: 1000; 
 }
 
 .merker {
@@ -156,7 +239,9 @@ p {
     left: 0; 
     top: 440px; 
     margin: 10px; 
+    z-index: 1000; 
     display: none; 
+    opacity: 0;
 }
 
 .merker img,
@@ -165,6 +250,19 @@ p {
     height: auto;
     display: block; 
     margin: 10px; 
+    z-index: 1000; 
+}
+
+.merker img {
+    margin-top: 20px; 
+    margin-bottom: -30px; 
+    filter: drop-shadow( 0px 1px 1px #96bac4);
+}
+
+.total img {
+    margin-bottom: 20px; 
+    filter: drop-shadow( 0px 1px 1px #96bac4);
+
 }
 
 .fly img {
@@ -180,4 +278,5 @@ p {
 .penger img {
     width: 50px; 
 }
+
 

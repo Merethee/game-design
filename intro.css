@@ -1,24 +1,151 @@
-* {
-    box-sizing: border-box; 
-}
+* { box-sizing: border-box; }
 
 body {
     margin: 0;
     padding: 0;
     background-color: #c5dde4;
+    font-size: 16px;
 }
 
-/* Kongen */
-.konge {
+/* Logo */
+.logo {
     width: 200px;
-    height: auto;
+    height: 50px;
     position: absolute;
-    left: 10%;
+    left: 42%;
+    top: 3%;
 }
 
-/* Butler */
-.butler {
+.logo img { width: 220px; }
+
+/* Wrapper rundt konge, snakkebobler og butler */
+.wrapper {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 0 5% 7% 5%;
+}
+
+/* Konge og Butler */
+.konge, .butler { width: 170px; }
+
+.konge img, .butler img {
+    width: 170px;
+    height: auto;
+}
+
+/* snakkebobler */
+.snakkeboble-venstre, .snakkeboble-hoyre {
     width: 200px;
     height: auto;
+}
+
+.snakkeboble-venstre { margin-bottom: 420px; }
+.snakkeboble-hoyre { margin-bottom: 370px; }
+
+.snakkeboble-konge, .snakkeboble-butler {
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    font-size: .7rem;
+    position: relative;
+    box-shadow: 0px 1px 10px #719eac;
+}
+
+/* Piler på snakkebobler */ 
+.snakkeboble-konge::after, .snakkeboble-butler::after  {
+	content: '';
+	position: absolute;
+	top: 55%;
+	border: 20px solid transparent;
+	margin-top: -23px;
+    margin-left: -17px;
+}
+
+.snakkeboble-konge::after { left: 5px; border-right-color: white; border-left: 0; }
+.snakkeboble-butler::after { right: -10px; border-left-color: white; border-right: 0; }
+
+.snakkeboble-konge { display: block; }
+.snakkeboble-butler { display: none; }
+
+@keyframes fadeout {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    70% { opacity: .7;}
+    100% { opacity: 0; 
+        display: none; }
+}
+
+@keyframes fadein {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    70% { opacity: .7;}
+    100% { opacity: 0; 
+        display: none; }
+}
+
+#konge-tekst-1, #butler-tekst-1 {
+    width: 170px;
     position: absolute;
+    margin: 20px;
+}
+
+.neste {
+    font-size: 1rem;
+    position: absolute;
+    right: 25px;
+    bottom: -15px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.neste:hover {
+    right: 22px;
+}
+
+/* Hopp-over-knapp */
+button {
+    cursor: pointer;
+    color: #003e5d;
+    font-size: .8rem;
+
+    height: 40px;
+    width: 130px;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    box-shadow: 0px 1px 10px #719eac;
+}
+
+/* Lager border på innsiden */
+button::after {
+    content: "";
+    position: absolute;
+    right: 3%;
+    bottom: 10%;
+    width: 120px;
+    height: 30px;
+    border: 1px solid #003e5d;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+}
+
+button span:after {
+    content: '\00bb';
+    opacity: 0;
+    transition: .5s;
+}
+
+button:hover span:after {
+    opacity: 1;
+    margin-left: 8px;
 }
