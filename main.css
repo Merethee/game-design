@@ -84,6 +84,7 @@
     border-radius: 50px;
     cursor: pointer; 
     filter: drop-shadow(0 1px 2px #222);  
+    animation: scale 2s ease-in-out infinite;
 }
 
 #sor .dot {
@@ -162,17 +163,17 @@
 
 .instruks h4 {
     margin-left: 60px; 
-    margin-top: 50px; 
+    margin-top: 60px; 
 }
 
 .instruks ol {
-    margin-top: -10px; 
+    margin-top: 40px; 
 }
 
 .instruks li {
     margin-left: 60px; 
     font-size: .8rem; 
-    line-height: 1.4em; 
+    line-height: 1.6em; 
 }
 
 .klar-btn {
@@ -183,7 +184,7 @@
     border-radius: 25px; 
 
     position: absolute;
-    top: 290px; 
+    top: 280px; 
     left: 180px; 
     box-shadow: 0px 1px 2px #c7c7c7;
     cursor: pointer;

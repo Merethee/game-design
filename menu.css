@@ -41,14 +41,23 @@
     left: 14px; 
 }
 
-.resumebtn li a {
+.menuwrapper .resumebtn li a {
     position: absolute;
+    top: 360px; 
     left: 273px;  
     z-index: 4000; 
 }
 
+.menuwrapper .avslutt li a {
+    position: absolute; 
+    top: 275px; 
+    left: 280px;
+    z-index: 4000; 
+}
+
+
 /* menu header */
-h1 {
+.menuwrapper h1 {
     margin-top: 2rem;
     font-size: 1.8rem;
     font-weight: 400;
@@ -57,7 +66,7 @@ h1 {
 }
 
 /* menu content */
-ul {
+.menuwrapper ul {
     list-style-type: none;
     padding: 0;
     margin: 0 auto;
@@ -65,24 +74,24 @@ ul {
     text-align: center;
 }
 
-li {
+.menuwrapper li {
     margin-bottom: 1rem;
 }
 
-li a {
+.menuwrapper li a {
     text-decoration: none;
     color: #222; 
 }
 
-li:nth-child(1) {
+.menuwrapper li:nth-child(1) {
     margin-top: 2.4rem;
 }
 
-li:nth-child(5) {
+.menuwrapper li:nth-child(5) {
     margin-top: 3rem;
 }
 
-li a:hover {
+.menuwrapper li a:hover {
     cursor: pointer;
     color: #003E5D; 
     text-decoration: underline; 
