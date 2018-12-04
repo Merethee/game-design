@@ -55,6 +55,7 @@ body {
     font-size: .7rem;
     position: relative;
     box-shadow: 0px 1px 10px #719eac;
+    transition: all .4s;
 }
 
 /* Piler på snakkebobler */ 
@@ -70,26 +71,30 @@ body {
 .snakkeboble-konge::after { left: 5px; border-right-color: white; border-left: 0; }
 .snakkeboble-butler::after { right: -10px; border-left-color: white; border-right: 0; }
 
-.snakkeboble-konge { display: block; }
-.snakkeboble-butler { display: none; }
+.snakkeboble-konge { transform: scaleX(1) scaleY(1); }
+.snakkeboble-butler { transform: scaleX(0) scaleY(0); }
 
-@keyframes fadeout {
-    0% { opacity: 1; }
-    50% { opacity: 1; }
-    70% { opacity: .7;}
-    100% { opacity: 0; 
-        display: none; }
+.ut-venstre {
+    transform-origin: left;
+    transform: scaleX(0) scaleY(0);
 }
 
-@keyframes fadein {
-    0% { opacity: 1; }
-    50% { opacity: 1; }
-    70% { opacity: .7;}
-    100% { opacity: 0; 
-        display: none; }
+.inn-venstre {
+    transform-origin: left;
+    transform: scaleX(1) scaleY(1);
 }
 
-#konge-tekst-1, #butler-tekst-1 {
+.ut-hoyre {
+    transform-origin: right;
+    transform: scaleX(0) scaleY(0);
+}
+
+.inn-hoyre {
+    transform-origin: right;
+    transform: scaleX(1) scaleY(1);
+}
+
+#konge-tekst, #butler-tekst {
     width: 170px;
     position: absolute;
     margin: 20px;
