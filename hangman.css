@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #c5dde4;
+}
+
+/* Hovedboksen */
+main {
+    background-color: white;
+    width: 850px;
+    height: 700px;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 2px 2px 4px #9cb9c2;
+}
+
+/* Linjene på innsiden av boksen */
+main::after {
+    content: "";
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    width: 820px;
+    height: 95%;
+    border: 1.5px solid #003e5d;
+}
+
+/* Machu Picchu bilde */
+img {
+    display: block;
+    margin: 1.5rem auto;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+/* Rewards for oppgaven */
+.reward {
+    border: 1px solid red;
+    position: absolute;
+    height: 80px;
+    width: 120px;
+    bottom: 20px;
+    left: 20px;
+}
+
+.reward p {
+    font-weight: 300;
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.coins p {
+    margin-bottom: 10px;
+}
+
+.merke p {
+    margin-left: 15px;
+}
+
+.coins img {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: -4px;
+}
+
+.merke img {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: -4px;
+}
