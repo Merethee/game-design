@@ -147,6 +147,19 @@ h1 {
     font-size: 1.5rem;
 }
 
+/* Fun fact box */
+
+.funFactBox {
+    width: 230px;
+    height: 100px;
+    position: absolute;
+    top: 560px;
+    right: 100px;
+    background-color: yellow;
+    text-align: center;
+    margin: auto;
+}
+
 
 
 /* Det som viser hva du får i belønning om du klarer oppgaven, merke og penger */

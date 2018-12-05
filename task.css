@@ -1,4 +1,3 @@
-
 /* Linjene rundt boksen */
 .vl {
     position: absolute;
@@ -33,63 +32,6 @@
     border-top: 1px solid #eebb54;
 }
 
-/* DOT STYLE FILL UP */
-
-hr {
-    position: absolute;
-    width: 90px;
-    top: 70px;
-    left: 380px;
-    border-top: 2px solid #9cb9c2;
-}
-
-.dottystyle ul {
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    cursor: default;
-}
-
-.dottystyle li {
-    position: relative;
-    display: block;
-    float: left;
-    margin: 0 16px;
-    width: 12px;
-    height: 12px;
-}
-
-.dottystyle li p {
-    top: 55px;
-    left: 360px;
-    width: 100%;
-    height: 100%;
-    outline: none;
-    border-radius: 50%;
-    background-color: #ffffff;
-    background-color: #003e5d;
-    text-indent: -999em;
-    /* make the text accessible to screen readers */
-    position: absolute;
-
-}
-
-.dottystyle li a {
-    top: 70px;
-    left: 360px;
-    width: 100%;
-    height: 100%;
-    outline: none;
-    border-radius: 50%;
-    box-shadow: inset 0 0 0 2px #9cb9c2;
-    background-color: #ffffff;
-    background-color: #003e5d;
-    text-indent: -999em;
-    /* make the text accessible to screen readers */
-    position: absolute;
-}
 
 
 /* Hovedboksen */
@@ -142,8 +84,25 @@ h1 {
     text-align: center;
 }
 
+#rigth {
+    border: 2px solid #003e5d;
+    box-shadow: 1px 1px 1px #003e5d;
+}
+
+#wrong {
+    border: 2px solid #003e5d;
+}
+
+#wrong1 {
+    border: 2px solid #003e5d;
+}
+
+#wrong2 {
+    border: 2px solid #003e5d;
+}
+
 .button {
-    padding: 12px;
+    padding: 9px;
     width: 265px;
     height: 50px;
     background-color: #003e5d;
@@ -161,7 +120,7 @@ h1 {
 }
 
 .button1 {
-    padding: 12px;
+    padding: 9px;
     width: 265px;
     height: 50px;
     background-color: #003e5d;
@@ -182,22 +141,25 @@ h1 {
 
 .reward {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 35px;
 }
 
 .reward p {
     font-weight: 500;
+    position: absolute;
+    left: 35px;
+    bottom: 10px;
 }
 
 .coins img {
     position: absolute;
-    left: 30px;
-    bottom: 50px;
+    left: 2px;
+    bottom: 70px;
 }
 
 .merke img {
     position: absolute;
-    left: 27px;
-    bottom: 14px;
+    left: 0px;
+    bottom: 22px;
 }
