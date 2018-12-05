@@ -135,8 +135,8 @@ body {
 .snakkeboble-butler-1::after, .snakkeboble-butler-2::after { right: -10px; border-left-color: white; border-right: 0; }
 
 
-.snakkeboble-konge-1 { top: 100px; transform: scaleX(1) scaleY(1); }
-.snakkeboble-konge-2 { transform: scaleX(0) scaleY(0); }
+.snakkeboble-konge-1 { top: 200px; transform: scaleX(1) scaleY(1); }
+.snakkeboble-konge-2 { top: 100px; transform: scaleX(0) scaleY(0); }
 .snakkeboble-konge-3 { transform: scaleX(0) scaleY(0); }
 .snakkeboble-butler-1 { top: 100px; transform: scaleX(0) scaleY(0); }
 .snakkeboble-butler-2 { transform: scaleX(0) scaleY(0); }
@@ -167,7 +167,7 @@ body {
     margin: 20px;
 }
 
-.neste-konge, .neste-butler {
+.neste {
     font-size: 1rem;
     position: absolute;
     right: 25px;
@@ -176,8 +176,18 @@ body {
     cursor: pointer;
 }
 
-.neste:hover {
+.neste {
     right: 22px;
+}
+
+.start-knapp {
+    display: none;
+
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: palevioletred;
 }
 
 /* Hopp-over-knapp */
