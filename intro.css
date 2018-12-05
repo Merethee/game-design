@@ -165,6 +165,7 @@ body {
     width: 170px;
     position: absolute;
     margin: 20px;
+    line-height: .85rem;
 }
 
 .neste {
@@ -184,10 +185,19 @@ body {
     display: none;
 
     position: absolute;
-    width: 200px;
-    height: 100px;
+    width: 160px;
+    height: 70px;
     border-radius: 50px;
-    background-color: palevioletred;
+    background-color: white;
+}
+
+.start-knapp::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid #003e5d;
 }
 
 /* Hopp-over-knapp */
@@ -216,9 +226,9 @@ button::after {
     bottom: 10%;
     width: 120px;
     height: 30px;
+    border-radius: 20px;
     border: 1px solid #003e5d;
     /* border: 1px solid white; */
-    border-radius: 20px;
 }
 
 button span:after {
