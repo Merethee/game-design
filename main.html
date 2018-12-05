@@ -11,13 +11,16 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="hangman.css">
+    <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
+
     <div class="burgermenu">
         <span></span>
         <span></span>
         <span></span>
     </div>
+
     <div class="menuwrapper">
             <h1>MENY</h1>
             <ul>
@@ -32,6 +35,7 @@
             </div>
             </ul>
         </div>
+
     <div class="instruks">
         <h4>Slik starter du</h4>
         <ol>
@@ -61,12 +65,14 @@
             <p>0</p>
         </div>
     </div>
+
     <div class="merker">  
         <img src="img/o.png" alt="øst">   <p>0</p>
         <img src="img/s.png" alt="sør">   <p>0</p>
         <img src="img/n.png" alt="nord">  <p>0</p>
         <img src="img/v.png" alt="vest">  <p>0</p>
     </div>
+
     <div class="kart">
         <img src="img/map.png" alt="kart">
             <div id="nord">
@@ -85,25 +91,50 @@
                 <div class="dot"></div>
             </div>
         </div>
+
+        <!-- spørsmål rutene -->
+
+        <main class="hovedstat">
+                <div class="sor">Vest-Europa</div>
+                <img src="img/berlin.jpg" style="width:540px; height: auto;">
+                <p class="arrow">&raquo;</p>
+                <h1>Hva heter hovedstaden i Tyskland?</h1>
+                <div id="svar">
+                    <div id="rigth" onclick="javascript:rigthAnswer();" class="button">Berlin</div>
+                    <div id="wrong" onclick="javascript:barcaAnswer();" class="button">München</div>
+                </div>
+                <div id="svar1">
+                    <div id="wrong1" onclick="javascript:grandAnswer();" class=" button1">Hamburg</div>
+                    <div id="wrong2" onclick="javascript:bronAnswer();" class="button1">Brønnøysund</div>
+                </div>
+                <div class="reward">
+                    <div class="coins">
+                        <p>60</p> <img src="img/Coins.png" style="width: 25px; height: auto;">
+                    </div>
+                    <div class="merke">
+                        <p>1</p> <img src="img/v.png" style="width: 29px; height: auto;">
+                    </div>
+                </div>
+                <p class="pagecounter">1 / 5</p>
+            </main>
+
         <main class="hangmanwrapper">
             <h1>Vest-Europa</h1>
             <img src="img/berlinerdom.jpg" alt="Pic of Berliner Dom" style="width:540px;height:auto;">
             <h2>Hva heter den kjente bygningen i bildet?</h2>
-            
             <div class="answerwrapper">
-                <div class="berlinerdom"></div>
+                <div class="berlinerdom"><p>B</p></div>
                 <div class="berlinerdom"><p>E</p></div>
-                <div class="berlinerdom"></div>
+                <div class="berlinerdom"><p>R</p></div>
+                <div class="berlinerdom"><p class="ucl">L</p></div>
                 <div class="berlinerdom"><p>I</p></div>
-                <div class="berlinerdom"></div>
-                <div class="berlinerdom"></div>
+                <div class="berlinerdom"><p class="ucn">N</p></div>
                 <div class="berlinerdom"><p>E</p></div>
-                <div class="berlinerdom"></div>
-                <div class="berlinerdom"></div>
+                <div class="berlinerdom"><p>R</p></div>
+                <div class="berlinerdom"><p>D</p></div>
                 <div class="berlinerdom"><p>O</p></div>
-                <div class="berlinerdom"></div>
+                <div class="berlinerdom"><p>M</p></div>
             </div>
-    
             <div class= optionswrapper>
                 <div class="optbox"><p>G</p></div>
                 <div class="optbox"><p>B</p></div>
@@ -114,28 +145,26 @@
                 <div class="optbox"><p>E</p></div>
                 <div class="optbox"><p>M</p></div>
                 <div class="optbox"><p>H</p></div>
-                <div class="optbox"><p>N</p></div>
+                <div class="optbox userChoiceL"><p>L</p></div>
                 <div class="optbox"><p>I</p></div>
                 <div class="optbox"><p>J</p></div>
                 <div class="optbox"><p>O</p></div>
                 <div class="optbox"><p>F</p></div>
-                <div class="optbox"><p>L</p></div>
+                <div class="optbox userChoiceN"><p>N</p></div>
                 <div class="optbox"><p>V</p></div>
                 <div class="optbox"><p>C</p></div>
                 <div class="optbox"><p>U</p></div>
                 <div class="optbox"><p>D</p></div>
                 <div class="optbox"><p>T</p></div>
             </div>
-
             <div class="reward">
                 <div class="coins">
-                    <p>60</p><img src="img/Coins.png" style="width: 25px; height: 25px;">
+                    <img src="img/Coins.png" style="width: 25px; height: 25px;"><p>60</p>
                 </div>
                 <div class="merke">
-                    <p>1</p><img src="img/s.png" style="width: 29px; height: auto;">
+                    <img src="img/v.png" style="width: 29px; height: auto;"><p>1</p>
                 </div>
             </div>
-    
             <p class="pagecounter">2 / 5</p>
         </main>
 
@@ -146,5 +175,6 @@
     <script src="main.js"></script>
     <script src="menu.js"></script>
    <script src="hangman.js"></script>
+   <script src="quiz.js"></script>
 </body>
 </html>

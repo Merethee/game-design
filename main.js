@@ -75,7 +75,8 @@ function zoomMap(position){
 // Vest Europa - spørsmål 
 
 var vestDot = document.querySelector(".vDot"); 
-var hangman = document.querySelector(".hangmanwrapper"); 
+// var hangman = document.querySelector(".hangmanwrapper"); 
+var hovedstat = document.querySelector(".hovedstat"); 
 
 vestDot.addEventListener("click", questionVest);
 
@@ -83,13 +84,20 @@ function questionVest() {
     
     zoomMap('zoom-vest');
 
-    hangman.classList.add("ruteanim"); 
+    // hangman.classList.add("ruteanim"); 
+    hovedstat.classList.add("ruteanim"); 
 
-    if(hangman.style.display !== "block") { 
-        hangman.style.display = "block"; 
+    if(hovedstat.style.display !== "block") { 
+        hovedstat.style.display = "block"; 
     } else {
-    hangman.style.display = "none"; 
+        hovedstat.style.display = "none"; 
     }
+
+    // if(hangman.style.display !== "block") { 
+    //     hangman.style.display = "block"; 
+    // } else {
+    // hangman.style.display = "none"; 
+    // }
 
 }    
 

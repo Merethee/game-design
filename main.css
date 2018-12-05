@@ -140,8 +140,6 @@
     left: 225px; 
 }
 
-
-
 @keyframes scale {
     0% {
         transform: scale(1);
@@ -188,7 +186,7 @@
     content: ""; 
     width: 470px;
     height: 350px;
-    border: 2px solid #003E5D;
+    border: 1px solid #003E5D;
     position: absolute;
     top: 14px;  
     left: 13px; 

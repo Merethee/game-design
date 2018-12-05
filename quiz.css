@@ -1,4 +1,4 @@
-main::after {
+.hovedstat::after {
     content: "";
     position: absolute;
     left: 14px;
@@ -11,20 +11,19 @@ main::after {
 
 
 /* Hovedboksen */
-
-
-main {
+.hovedstat {
     background-color: white;
     width: 850px;
     height: 700px;
     margin: 50px auto;
     position: relative;
-    box-shadow: 2px 2px 4px #9cb9c2;
+    filter: drop-shadow(0 1px 2px #222);
+    /* display: none;  */
 }
 
 /* Det som forklarer hvor du er i kontintenet */
 
-.sor {
+.hovedstat .sor {
     position: absolute;
     top: 35px;
     left: 370px;
@@ -34,7 +33,7 @@ main {
 
 /* Bildene */
 
-img {
+.hovedstat img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -73,7 +72,7 @@ img {
     border: 2px solid #003e5d;
 }
 
-.button {
+.hovedstat .button {
     padding: 7px;
     width: 265px;
     height: 50px;
@@ -89,11 +88,11 @@ img {
     cursor: pointer;
 }
 
-.button:hover {
+.hovedstat .button:hover {
     border: 1px solid white;
 }
 
-.button1 {
+.hovedstat .button1 {
     padding: 7px;
     width: 265px;
     height: 50px;
@@ -109,11 +108,11 @@ img {
     cursor: pointer;
 }
 
-.button1:hover {
+.hovedstat .button1:hover {
     border: 1px solid white;
 }
 
-h1 {
+.hovedstat h1 {
     font-size: 1rem;
     font-weight: 300;
     text-align: center;
@@ -122,7 +121,7 @@ h1 {
 
 /* Det som viser hva du får i belønning om du klarer oppgaven, merke og penger */
 
-.reward {
+.hovedstat .reward {
     position: absolute;
     height: 80px;
     width: 120px;
@@ -130,7 +129,7 @@ h1 {
     left: 17px;
 }
 
-.reward p {
+.hovedstat .reward p {
     font-weight: 300;
     display: inline-block;
     margin-top: 10px;
@@ -138,8 +137,7 @@ h1 {
     margin-bottom: 0px;
 }
 
-
-.coins img {
+.hovedstat .coins img {
     position: absolute;
     bottom: 38px;
     left: 7px;
@@ -151,12 +149,19 @@ h1 {
     left: 4px;
 }
 
-/* page counter */
-.pagecounter {
-    /*border: 1px solid red;*/
+.hovedstat .pagecounter {
+
     color: #003e5d;
     display: inline block;
     position: absolute;
     right: 25px;
     bottom: 2px;
+}
+
+
+.arrow {
+    position: absolute;
+    right: 50px;
+    top: 400px;
+    font-size: 70px; 
 }
