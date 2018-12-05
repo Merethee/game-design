@@ -23,55 +23,55 @@
         <div class="konge">
             <img src="img/Konge.png" alt="Kongen stående i blå dress">
         </div>
-        <div class="shadow-king"></div>
 
         <!-- Snakkebobler -->
         <div class="snakkeboble-venstre">
             <!-- Første snakkeboble -->
             <div class="snakkeboble-konge-1"> 
-                <p id="konge-tekst">Hei, Butler Bernhard.
+                <p class="tekst">Hei, Butler Bernhard.
                     <br>Jeg har et oppdrag til deg.</p>
                 <p class="neste" name="button" onclick="nesteButlerBoble()" value="neste">&raquo;</p>
             </div>
 
             <!-- Andre snakkeboble -->
             <div class="snakkeboble-konge-2"> 
-                <p id="konge-tekst">Som ny konge trenger jeg informasjon fra de andre landene.</p>
+                <p class="tekst">Som ny konge trenger jeg informasjon fra de andre landene.</p>
                 <p class="neste" name="button" onclick="nesteButlerBoble2()" value="neste">&raquo;</p>
             </div>
 
             <!-- Tredje snakkeboble -->
             <div class="snakkeboble-konge-3"> 
-                <p id="konge-tekst">God tur!</p>
+                <p class="tekst">God tur!</p>
             </div>
         </div>
 
         <div class="snakkeboble-hoyre">
             <!-- Første snakkeboble -->
             <div class="snakkeboble-butler-1"> 
-                <p id="butler-tekst">God dag, Deres Majestet.</p>
+                <p class="tekst">God dag, Deres Majestet.</p>
                 <p class="neste" name="button" onclick="nesteKongeBoble()" value="neste">&raquo;</p>
             </div>
 
             <!-- Andre snakkeboble -->
             <div class="snakkeboble-butler-2"> 
-                <p id="butler-tekst">OK!</p>
+                <p class="tekst">OK!</p>
                 <p class="neste" name="button" onclick="nesteKongeBoble2()" value="neste">&raquo;</p>
             </div>
         </div>
 
-        <div class="start-knapp"></div>
+        <a  href="main.html" class="start-knapp"> 
+            <span>Start oppdrag</span>
+        </a>
 
         <!-- Butler -->
         <div class="butler">
             <img src="img/Butler.png" alt="Butler stående i svart dress">
         </div>
-        <div class="shadow-butler"></div>
     </div>
 
     <!-- Hopp-over-knapp -->
-    <a  href="start.html">
-    <button class="hopp-over"><span>Hopp over</span></button>
+    <a  href="main.html" class="hopp-over">
+        <span>Hopp over</span>
     </a>
 
     <!-- JavaScript -->
