@@ -4,9 +4,10 @@ var merker = document.querySelector(".merker");
 
 pil.addEventListener("click", showBadges);
 
-
 // skjuler merkene før click 
 function showBadges() {
+
+   merker.classList.toggle('smooth');
 
         if(merker.style.display !== "block") { 
             merker.style.display = "block"; 
@@ -56,22 +57,21 @@ vest.addEventListener("click", function (event) {
     if(allowMapInput) kart.classList.toggle('zoom-vest');
 });
 
-    // Vest Europa - spørsmål dot
+// Vest Europa - spørsmål dot
 
-    var vestDot = document.querySelector(".vDot"); 
-    var hangman = document.querySelector(".hangmanwrapper"); 
+var vestDot = document.querySelector(".vDot"); 
+var hangman = document.querySelector(".hangmanwrapper"); 
 
-    vestDot.addEventListener("click", questionVest);
+vestDot.addEventListener("click", questionVest);
 
-    function questionVest() {
-        kart.classList.remove('zoom-vest');
-        
+function questionVest() {
+    kart.classList.remove('zoom-vest');
 
-        if(hangman.style.display !== "block") { 
-            hangman.style.display = "block"; 
-        } else {
-           hangman.style.display = "none"; 
-        }
-      
-    }    
+    if(hangman.style.display !== "block") { 
+        hangman.style.display = "block"; 
+    } else {
+    hangman.style.display = "none"; 
+    }
+
+}    
 

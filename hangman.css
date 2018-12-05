@@ -76,6 +76,7 @@
 }
 
 /* bokstavbokser for alternative bokstaver til brukeren */
+
 .optionswrapper {
     /*border: 1px solid green;*/
     margin: 1.5rem auto;
@@ -108,8 +109,8 @@
 }
 
 /* Rewards for oppgaven */
+
 .hangmanwrapper  .reward {
-    /*border: 1px solid red;*/
     position: absolute;
     height: 60px;
     width: 120px;
@@ -146,8 +147,7 @@
 
 /* page counter */
 .pagecounter {
-    /*border: 1px solid red;*/
-   color: #003e5d;
+    color: #003e5d;
     display: inline block;
     position: absolute;
     right: 25px;

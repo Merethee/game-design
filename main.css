@@ -37,6 +37,17 @@
     position: absolute; 
     bottom: -10px;
     right: 50px; 
+    animation: fadeup 5s;
+}
+
+@keyframes fadeup {
+    from { 
+        opacity: 0;
+        transform: translateY(140px); 
+    }
+    to { opacity: 1;
+        transform: translateY(0); 
+    }
 }
 
 .butler-kart img{
@@ -82,7 +93,9 @@
     width: 15px;
     height: 15px;
     border-radius: 50px;
-    cursor: pointer;   
+    cursor: pointer; 
+    filter: drop-shadow(0 1px 2px #222);  
+    animation: scale 2s ease-in-out infinite;
 }
 
 #sor .dot {
@@ -108,7 +121,23 @@
     top: 110px;
     left: 320px; 
     background: purple; 
+    filter: drop-shadow(0 1px 2px #222);
 
+    animation: scale 2s ease-in-out infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 #nord .dot {
@@ -131,6 +160,17 @@
     top: 190px; 
     left: 450px; 
     visibility: visible; 
+    animation: pop 1s;
+}
+
+@keyframes pop  {
+    from { 
+        opacity: 0;
+        transform: scale(0.8); 
+    }
+    to { opacity: 1;
+        transform: scale(1) 
+    }
 }
  
 .instruks:after {
@@ -145,17 +185,17 @@
 
 .instruks h4 {
     margin-left: 60px; 
-    margin-top: 50px; 
+    margin-top: 60px; 
 }
 
 .instruks ol {
-    margin-top: -10px; 
+    margin-top: 40px; 
 }
 
 .instruks li {
     margin-left: 60px; 
     font-size: .8rem; 
-    line-height: 1.4em; 
+    line-height: 1.6em; 
 }
 
 .klar-btn {
@@ -166,7 +206,7 @@
     border-radius: 25px; 
 
     position: absolute;
-    top: 290px; 
+    top: 280px; 
     left: 180px; 
     box-shadow: 0px 1px 2px #c7c7c7;
     cursor: pointer;
@@ -246,7 +286,20 @@ p {
     margin: 10px; 
     z-index: 1000; 
     display: none; 
+}
 
+.merker.smooth {
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { 
+        opacity: 0;
+        transform: translateY(-10px); 
+    }
+    to { opacity: 1;
+        transform: translateY(0) 
+    }
 }
 
 .merker img,
