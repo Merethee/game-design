@@ -8,7 +8,7 @@ let konge3 = document.querySelector(".snakkeboble-konge-3");
 // Viser butlerens svar til kongen
 function nesteButlerBoble() {
     
-    // konge1.style.animationFillMode = ("backwards");
+    konge1.style.animationFillMode = ("backwards");
     konge1.classList.add("ut-venstre");
     butler1.classList.add("inn-hoyre");
 }
