@@ -1,37 +1,13 @@
-/* Linjene rundt boksen */
-.vl {
+main::after {
+    content: "";
     position: absolute;
-    border-left: 1px solid #eebb54;
-    height: 660px;
-    left: 20px;
-    top: 20px;
+    left: 14px;
+    top: 15px;
+    width: 820px;
+    height: 95%;
+    border: 1px solid #eebb54;
+    z-index: 1;
 }
-
-.vl2 {
-    position: absolute;
-    border-left: 1px solid #eebb54;
-    height: 660px;
-    right: 20px;
-    top: 20px;
-}
-
-
-.hr1 hr {
-    position: absolute;
-    width: 810px;
-    top: 10px;
-    left: 20px;
-    border-top: 1px solid #eebb54;
-}
-
-.hr2 hr {
-    position: absolute;
-    width: 810px;
-    top: 670px;
-    left: 20px;
-    border-top: 1px solid #eebb54;
-}
-
 
 
 /* Hovedboksen */
@@ -113,6 +89,7 @@ h1 {
     font-weight: 200;
     border-radius: 5px;
     box-shadow: 1px 1px 1px #003e5d;
+    z-index: 2;
 }
 
 .button:hover {
@@ -131,6 +108,7 @@ h1 {
     font-weight: 200;
     border-radius: 5px;
     box-shadow: 1px 1px 1px #003e5d;
+    z-index: 2;
 }
 
 .button1:hover {
@@ -141,25 +119,28 @@ h1 {
 
 .reward {
     position: absolute;
-    bottom: 10px;
-    left: 35px;
+    height: 80px;
+    width: 120px;
+    bottom: 18px;
+    left: 17px;
 }
 
 .reward p {
-    font-weight: 500;
-    position: absolute;
-    left: 35px;
-    bottom: 10px;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 40px;
 }
+
 
 .coins img {
     position: absolute;
-    left: 2px;
-    bottom: 70px;
+    bottom: 56px;
+    left: 3px;
 }
 
 .merke img {
     position: absolute;
+    bottom: 8px;
     left: 0px;
-    bottom: 22px;
 }
