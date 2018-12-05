@@ -2,42 +2,32 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #c5dde4;
-}
-
 /* Hovedboksen */
-main {
+.hangmanwrapper {
     background-color: white;
     width: 850px;
     height: 700px;
-    margin: 50px auto;
-    position: relative;
+
+    position: absolute;
+    top: 15px; 
+    left: 260px; 
     box-shadow: 2px 2px 4px #9cb9c2;
+    /*display: none;*/
 }
 
 /* Linjene på innsiden av boksen */
-main::after {
+.hangmanwrapper::after {
     content: "";
     position: absolute;
-    left: 14px;
     top: 14px;
+    left: 14px;
     width: 820px;
     height: 95%;
     border: 1.5px solid #003e5d;
+    /*z-index: -100;*/
 }
 
-/* Machu Picchu bilde */
-img {
-    display: block;
-    margin: 1.5rem auto;
-}
-
-h1 {
+.hangmanwrapper h1 {
     text-align: center;
     font-weight: 200;
     font-size: 1rem;
@@ -45,39 +35,131 @@ h1 {
     margin-bottom: 0;
 }
 
-/* Rewards for oppgaven */
-.reward {
-    border: 1px solid red;
-    position: absolute;
-    height: 80px;
-    width: 120px;
-    bottom: 20px;
-    left: 20px;
+/* Berliner Dom bilde */
+.hangmanwrapper img {
+    display: block;
+    margin: 1.5rem auto;
 }
 
-.reward p {
+.hangmanwrapper h2 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 1.5rem;
+}
+
+/* Bokstavbokser for svaret, Berliner Dom */
+.answerwrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.answerwrapper.green .berlinerdom {
+    border: 2px solid limegreen;
+}
+
+.berlinerdom {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    width: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* manglende bokstaver til funksjon, L og N */
+.ucl {
+    display: none;
+}
+
+.ucn {
+    display: none;
+}
+
+.berlinerdom > p {
+    margin: auto auto;
+}
+
+.berlinerdom:nth-child(8) {
+    margin-right: 25px;
+}
+
+/* bokstavbokser for alternative bokstaver til brukeren */
+.optionswrapper {
+    /*border: 1px solid green;*/
+    margin: 1.5rem auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 500px;
+    height: 100px;
+}
+
+.optbox {
+    border: 1.5px solid #003e5d;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    width: 35px;
+    margin: auto auto;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    justify-content: space-around;
+    z-index: 100;
+}
+
+.optbox p {
+    margin: auto auto;
+}
+
+.optbox:hover {
+    cursor: pointer;
+}
+
+/* Rewards for oppgaven */
+.hangmanwrapper  .reward {
+    /*border: 1px solid red;*/
+    position: absolute;
+    height: 60px;
+    width: 120px;
+    bottom: 30px;
+    left: 30px;
+}
+
+.hangmanwrapper .reward p {
     font-weight: 300;
     display: inline-block;
     margin-top: 0;
-    margin-right: 10px;
-}
-
-.coins p {
-    margin-bottom: 10px;
-}
-
-.merke p {
     margin-left: 15px;
 }
 
-.coins img {
+.hangmanwrapper .coins p {
+    margin-bottom: 10px;
+}
+
+.hangmanwrapper .merke p {
+    margin-left: 15px;
+}
+
+.hangmanwrapper .coins img {
     display: inline-block;
     margin: 0;
     margin-bottom: -4px;
 }
 
-.merke img {
+.hangmanwrapper .merke img {
     display: inline-block;
     margin: 0;
     margin-bottom: -4px;
+}
+
+/* page counter */
+.pagecounter {
+    /*border: 1px solid red;*/
+    color: #003e5d;
+    display: inline block;
+    position: absolute;
+    right: 25px;
+    bottom: 2px;
 }

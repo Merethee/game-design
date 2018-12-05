@@ -13,18 +13,62 @@
 <body>
     <main class="hangmanwrapper">
         <!-- header and img -->
-        <h1>Sør-Amerika</h1>
-        <img src="img/machu-picchu.jpg" alt="Pic of Machu Picchu" style="width:540px;height:auto;">
+        <h1>Vest-Europa</h1>
+        <img src="img/berlinerdom.jpg" alt="Pic of Berliner Dom" style="width:540px;height:auto;">
+        <h2>Hva heter den kjente bygningen i bildet?</h2>
         
+        <!-- letter boxes hangman answer -->
+        <div class="answerwrapper">
+            <div class="berlinerdom"><p>B</p></div>
+            <div class="berlinerdom"><p>E</p></div>
+            <div class="berlinerdom"><p>R</p></div>
+            <div class="berlinerdom"><p class="ucl">L</p></div>
+            <div class="berlinerdom"><p>I</p></div>
+            <div class="berlinerdom"><p class="ucn">N</p></div>
+            <div class="berlinerdom"><p>E</p></div>
+            <div class="berlinerdom"><p>R</p></div>
+            <div class="berlinerdom"><p>D</p></div>
+            <div class="berlinerdom"><p>O</p></div>
+            <div class="berlinerdom"><p>M</p></div>
+        </div>
+
+        <!-- letter boxes options -->
+        <div class= optionswrapper>
+            <div class="optbox"><p>G</p></div>
+            <div class="optbox"><p>B</p></div>
+            <div class="optbox"><p>A</p></div>
+            <div class="optbox"><p>Q</p></div>
+            <div class="optbox"><p>R</p></div>
+            <div class="optbox"><p>Z</p></div>
+            <div class="optbox"><p>E</p></div>
+            <div class="optbox"><p>M</p></div>
+            <div class="optbox"><p>H</p></div>
+            <div class="optbox userChoiceL"><p>L</p></div>
+            <div class="optbox"><p>I</p></div>
+            <div class="optbox"><p>J</p></div>
+            <div class="optbox"><p>O</p></div>
+            <div class="optbox"><p>F</p></div>
+            <div class="optbox userChoiceN"><p>N</p></div>
+            <div class="optbox"><p>V</p></div>
+            <div class="optbox"><p>C</p></div>
+            <div class="optbox"><p>U</p></div>
+            <div class="optbox"><p>D</p></div>
+            <div class="optbox"><p>T</p></div>
+        </div>
+
         <!-- rewards for accomplished task -->
         <div class="reward">
             <div class="coins">
-                <p>60</p><img src="img/Coins.png" style="width: 25px; height: 25px;">
+                <img src="img/Coins.png" style="width: 25px; height: 25px;"><p>60</p>
             </div>
             <div class="merke">
-                <p>1</p><img src="img/s.png" style="width: 29px; height: auto;">
+                <img src="img/v.png" style="width: 29px; height: auto;"><p>1</p>
             </div>
         </div>
+        
+        <!-- page counter -->
+        <p class="pagecounter">2 / 5</p>
     </main>
+    <script src="hangman.js"></script>
 </body>
 </html>
