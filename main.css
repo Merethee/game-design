@@ -167,7 +167,7 @@
     position: absolute;
     top: 190px; 
     left: 450px; 
-    visibility: visible; 
+    display: block; 
     animation: pop 1s;
 }
 

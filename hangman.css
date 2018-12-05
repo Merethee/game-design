@@ -9,7 +9,7 @@
     height: 700px;
 
     position: absolute;
-    top: 30px;
+    top: 15px;
     left: 295px;
     filter: drop-shadow(0 1px 2px #222);
     display: none;
@@ -178,3 +178,16 @@
     right: 25px;
     bottom: 2px;
 }
+
+.arrow-to {
+    position: absolute;
+    right: 50px;
+    top: 400px;
+    font-size: 70px; 
+    visibility: hidden;
+    z-index: 5000; 
+}
+
+.arrow-to:hover {
+    cursor: pointer;
+}   
