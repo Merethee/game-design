@@ -30,34 +30,50 @@ function removeWindow() {
 } 
 
 // Zoom på kart 
-var kart = document.querySelector(".kart");
 
-// Zoom Nord
 var nord = document.querySelector("#nord");
 nord.addEventListener("click", function (event) {
-    if(allowMapInput) kart.classList.toggle('zoom-nord');
+    zoomMap('zoom-nord');
 });
 
-// Zoom Sør
 var sor = document.querySelector("#sor");
 sor.addEventListener("click", function (event) {
-    if(allowMapInput) kart.classList.toggle('zoom-sor');
+    zoomMap('zoom-sor');
 });
 
-// Zoom Øst
 var ost = document.querySelector("#ost");
 ost.addEventListener("click", function (event) {
-    if(allowMapInput) kart.classList.toggle('zoom-ost');
+    zoomMap('zoom-ost');
 });
 
-// Zoom Vest
 var vest = document.querySelector("#vest");
-
 vest.addEventListener("click", function (event) {
-    if(allowMapInput) kart.classList.toggle('zoom-vest');
+    zoomMap('zoom-vest');
 });
 
-// Vest Europa - spørsmål dot
+var kart = document.querySelector(".kart");
+var zoomState = "map";
+
+function zoomMap(position){
+    console.log(position);  
+    if(allowMapInput) {
+        if(zoomState == "map") {
+            // zoom in
+            kart.classList.add(position);
+            zoomState = "";
+        } else {
+            // zoom out
+            kart.classList.remove('zoom-nord');
+            kart.classList.remove('zoom-sor');
+            kart.classList.remove('zoom-ost');
+            kart.classList.remove('zoom-vest');
+            zoomState = "map";
+        }
+    }
+}
+
+
+// Vest Europa - spørsmål 
 
 var vestDot = document.querySelector(".vDot"); 
 var hangman = document.querySelector(".hangmanwrapper"); 
@@ -65,7 +81,10 @@ var hangman = document.querySelector(".hangmanwrapper");
 vestDot.addEventListener("click", questionVest);
 
 function questionVest() {
-    kart.classList.remove('zoom-vest');
+    
+    zoomMap('zoom-vest');
+
+    hangman.classList.add("ruteanim"); 
 
     if(hangman.style.display !== "block") { 
         hangman.style.display = "block"; 
