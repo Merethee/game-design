@@ -5,7 +5,7 @@ main::after {
     top: 15px;
     width: 820px;
     height: 95%;
-    border: 1px solid #eebb54;
+    border: 1px solid #2a6441;
     z-index: 1;
 }
 
@@ -133,21 +133,22 @@ h1 {
 .reward p {
     font-weight: 300;
     display: inline-block;
-    margin-top: 0;
-    margin-left: 40px;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 0px;
 }
 
 
 .coins img {
     position: absolute;
-    bottom: 48px;
-    left: 3px;
+    bottom: 38px;
+    left: 7px;
 }
 
 .merke img {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: -1px;
+    left: 4px;
 }
 
 /* page counter */
