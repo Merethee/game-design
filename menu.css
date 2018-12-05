@@ -113,18 +113,3 @@
     }
 }
 
-
-/* .menuwrapper.close {
-    animation: close 1s;
-}
-
-@keyframes close  {
-    from { 
-        opacity: 1;
-        transform: scale(1); 
-    }
-    to { opacity: 0;
-        transform: scale(0.5); 
-    }
-}  */
-

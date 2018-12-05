@@ -12,7 +12,7 @@
     top: 15px; 
     left: 260px; 
     box-shadow: 2px 2px 4px #9cb9c2;
-    /*display: none;*/
+    display: none;
 }
 
 .hangmanwrapper.ruteanim {

@@ -49,7 +49,7 @@
     }
 }
 
-.butler-kart img{
+.butler-kart img {
     width: 140px;
     height: auto;
     filter: drop-shadow( 0px 1px 1px #96bac4);
@@ -126,9 +126,7 @@
     position: absolute;
     top: 160px;
     left: 20px; 
-  
 }
-
 
 @keyframes scale {
     0% {
@@ -161,7 +159,7 @@
     animation: pop 1s;
 }
 
-@keyframes pop  {
+@keyframes pop {
     from { 
        
         transform: scale(0.8); 
@@ -225,28 +223,31 @@
 
 /* tekst */
 
-p {
-    font-size: .7rem; 
-    position: absolute;
-}
-
 .total p {
+    position: absolute;
     font-weight: 700; 
+    font-size: .7rem; 
 }
 
 .penger p {
+    position: absolute;
     top: -2px; 
     left: 76px; 
+    font-size: .7rem; 
 }
 
 .fly p {
+    position: absolute;
     top: 63px; 
     left: 82px;
+    font-size: .7rem; 
 }
 
 .europa p {
+    position: absolute;
     top: 115px; 
     left: 82px; 
+    font-size: .7rem; 
 }
 
 .merker p {
@@ -254,6 +255,7 @@ p {
     top: -15px; 
     left: 83px; 
     font-weight: 700; 
+    font-size: .7rem; 
 }
 
 /* merkene */ 

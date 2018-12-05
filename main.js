@@ -72,7 +72,6 @@ function zoomMap(position){
     }
 }
 
-
 // Vest Europa - spørsmål 
 
 var vestDot = document.querySelector(".vDot"); 
