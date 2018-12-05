@@ -9,8 +9,8 @@
     height: 700px;
 
     position: absolute;
-    top: 15px; 
-    left: 260px; 
+    top: 30px;
+    left: 295px;
     box-shadow: 2px 2px 4px #9cb9c2;
     display: none;
 }
@@ -38,7 +38,7 @@
     left: 14px;
     width: 820px;
     height: 95%;
-    border: 1.5px solid #003e5d;
+    border: 1px solid #2A6441;
     /*z-index: -100;*/
 }
 

@@ -1,37 +1,13 @@
-/* Linjene rundt boksen */
-.vl {
+main::after {
+    content: "";
     position: absolute;
-    border-left: 1px solid #eebb54;
-    height: 660px;
-    left: 20px;
-    top: 20px;
+    left: 14px;
+    top: 15px;
+    width: 820px;
+    height: 95%;
+    border: 1px solid #2a6441;
+    z-index: 1;
 }
-
-.vl2 {
-    position: absolute;
-    border-left: 1px solid #eebb54;
-    height: 660px;
-    right: 20px;
-    top: 20px;
-}
-
-
-.hr1 hr {
-    position: absolute;
-    width: 810px;
-    top: 10px;
-    left: 20px;
-    border-top: 1px solid #eebb54;
-}
-
-.hr2 hr {
-    position: absolute;
-    width: 810px;
-    top: 670px;
-    left: 20px;
-    border-top: 1px solid #eebb54;
-}
-
 
 
 /* Hovedboksen */
@@ -51,8 +27,8 @@ main {
 .sor {
     position: absolute;
     top: 35px;
-    left: 373px;
-    font-size: 20px;
+    left: 370px;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -62,14 +38,10 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 79px;
+    padding-top: 95px;
+    padding-bottom: 10px;
 }
 
-h1 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 1.5rem;
-}
 
 /* Svar bokser */
 #svar {
@@ -102,7 +74,7 @@ h1 {
 }
 
 .button {
-    padding: 9px;
+    padding: 7px;
     width: 265px;
     height: 50px;
     background-color: #003e5d;
@@ -113,6 +85,8 @@ h1 {
     font-weight: 200;
     border-radius: 5px;
     box-shadow: 1px 1px 1px #003e5d;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -120,7 +94,7 @@ h1 {
 }
 
 .button1 {
-    padding: 9px;
+    padding: 7px;
     width: 265px;
     height: 50px;
     background-color: #003e5d;
@@ -131,35 +105,58 @@ h1 {
     font-weight: 200;
     border-radius: 5px;
     box-shadow: 1px 1px 1px #003e5d;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .button1:hover {
     border: 1px solid white;
 }
 
+h1 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 /* Det som viser hva du får i belønning om du klarer oppgaven, merke og penger */
 
 .reward {
     position: absolute;
-    bottom: 10px;
-    left: 35px;
+    height: 80px;
+    width: 120px;
+    bottom: 18px;
+    left: 17px;
 }
 
 .reward p {
-    font-weight: 500;
-    position: absolute;
-    left: 35px;
-    bottom: 10px;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 0px;
 }
+
 
 .coins img {
     position: absolute;
-    left: 2px;
-    bottom: 70px;
+    bottom: 38px;
+    left: 7px;
 }
 
 .merke img {
     position: absolute;
-    left: 0px;
-    bottom: 22px;
+    bottom: -1px;
+    left: 4px;
+}
+
+/* page counter */
+.pagecounter {
+    /*border: 1px solid red;*/
+    color: #003e5d;
+    display: inline block;
+    position: absolute;
+    right: 25px;
+    bottom: 2px;
 }
