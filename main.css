@@ -94,17 +94,16 @@
     cursor: pointer; 
     filter: drop-shadow(0 1px 2px rgba(34, 34, 34, 0.60));  
     background: #d4ccb8; 
+    position: absolute;
     animation: scale 2s ease-in-out infinite;
 }
 
 #sor .dot {
-    position: absolute;
     top: 70px;
     left: 80px; 
 } 
 
 #ost .dot {
-    position: absolute;
     top: 200px;
     left: 100px; 
 }
@@ -123,10 +122,25 @@
     animation: scale 2s ease-in-out infinite;
 }
 #nord .dot {
-    position: absolute;
     top: 160px;
     left: 20px; 
 }
+.dot.en {
+    top: 120px;
+    left: 160px; 
+}
+
+.dot.to {
+    top: 180px;
+    left: 195px; 
+}
+
+.dot.tre {
+    top: 110px;
+    left: 225px; 
+}
+
+
 
 @keyframes scale {
     0% {
