@@ -64,17 +64,19 @@ body {
     }
 }
 
-.shadow { 
+.shadow-butler, .shadow-king { 
     position: absolute;
-    right: 297px;
     width: 120px;
-    height: 4px;
-    bottom: 97px;
+    height: 2px;
+    bottom: 100px;
     border-radius: 50%;
     z-index: -9;
     background-color: #93b6c0;
-    animation: shadow 1.6s cubic-bezier(.30, .01, .50, 1.35);
+    animation: shadow 1.8s cubic-bezier(.30, .01, .50, 1.35);
 }
+
+.shadow-king { left: 297px; }
+.shadow-butler { right: 297px; }
 
 @keyframes shadow {
     0% {
@@ -82,6 +84,13 @@ body {
         height: 2px;
         width: 50px;
     }
+    85% { 
+        width: 0px;
+        padding-left: 0px;
+        padding-right: 0px; }
+    90% { 
+        right: 350px;
+        width: 0px; }
     100% {
         right: 290px;
         height: 4px;
@@ -90,8 +99,6 @@ body {
         
     }
 }
-
-
 
 /* snakkebobler */
 .snakkeboble-venstre, .snakkeboble-hoyre {
@@ -128,8 +135,8 @@ body {
 .snakkeboble-butler-1::after, .snakkeboble-butler-2::after { right: -10px; border-left-color: white; border-right: 0; }
 
 
-.snakkeboble-konge-1 { top: 100px; transform: scaleX(1) scaleY(1); }
-.snakkeboble-konge-2 { transform: scaleX(0) scaleY(0); }
+.snakkeboble-konge-1 { top: 200px; transform: scaleX(1) scaleY(1); }
+.snakkeboble-konge-2 { top: 100px; transform: scaleX(0) scaleY(0); }
 .snakkeboble-konge-3 { transform: scaleX(0) scaleY(0); }
 .snakkeboble-butler-1 { top: 100px; transform: scaleX(0) scaleY(0); }
 .snakkeboble-butler-2 { transform: scaleX(0) scaleY(0); }
@@ -158,9 +165,10 @@ body {
     width: 170px;
     position: absolute;
     margin: 20px;
+    line-height: .85rem;
 }
 
-.neste-konge, .neste-butler {
+.neste {
     font-size: 1rem;
     position: absolute;
     right: 25px;
@@ -169,8 +177,27 @@ body {
     cursor: pointer;
 }
 
-.neste:hover {
+.neste {
     right: 22px;
+}
+
+.start-knapp {
+    display: none;
+
+    position: absolute;
+    width: 160px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.start-knapp::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid #003e5d;
 }
 
 /* Hopp-over-knapp */
@@ -199,9 +226,9 @@ button::after {
     bottom: 10%;
     width: 120px;
     height: 30px;
+    border-radius: 20px;
     border: 1px solid #003e5d;
     /* border: 1px solid white; */
-    border-radius: 20px;
 }
 
 button span:after {
