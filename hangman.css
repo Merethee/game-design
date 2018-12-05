@@ -12,7 +12,7 @@
     top: 15px; 
     left: 260px; 
     box-shadow: 2px 2px 4px #9cb9c2;
-    display: none; 
+    /*display: none;*/
 }
 
 /* Linjene på innsiden av boksen */
@@ -63,6 +63,10 @@
     margin-right: 5px;
 }
 
+.uc {
+    display: none;
+}
+
 .berlinerdom > p {
     margin: auto auto;
 }
@@ -104,24 +108,20 @@
 }
 
 /* Rewards for oppgaven */
-
-.reward {
-    /*border: 1px solid red;*/
-}
 .hangmanwrapper  .reward {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     position: absolute;
     height: 60px;
     width: 120px;
-    bottom: 20px;
-    left: 20px;
+    bottom: 30px;
+    left: 30px;
 }
 
 .hangmanwrapper .reward p {
     font-weight: 300;
     display: inline-block;
     margin-top: 0;
-    margin-right: 10px;
+    margin-left: 15px;
 }
 
 .hangmanwrapper .coins p {
