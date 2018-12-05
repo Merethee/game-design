@@ -1,14 +1,43 @@
+let konge1 = document.querySelector(".snakkeboble-konge-1");
+let butler1 = document.querySelector(".snakkeboble-butler-1");
+let konge2 = document.querySelector(".snakkeboble-konge-2");
+let butler2 = document.querySelector(".snakkeboble-butler-2");
+let konge3 = document.querySelector(".snakkeboble-konge-3");
+
+
 // Viser butlerens svar til kongen
 function nesteButlerBoble() {
-    // document.querySelector(".snakkeboble-konge").style.animation = "fadeout 1s linear";
-    document.querySelector(".snakkeboble-konge").style.display = "none";
-    // document.querySelector(".snakkeboble-butler").style.animation = "fadein 1s linear";
-    document.querySelector(".snakkeboble-butler").style.display = "block";
+    
+    konge1.classList.add("ut-venstre");
+    butler1.classList.add("inn-hoyre");
 }
 
 // Viser kongens svar til butleren
 function nesteKongeBoble() {
-    document.querySelector(".snakkeboble-butler").style.display = "none";
-    document.querySelector(".snakkeboble-konge").style.display = "block";
-    document.querySelector("#konge-tekst-1").innerHTML = "Som ny konge trenger jeg informasjon fra de andre landene.";
+
+    butler1.classList.remove("inn-hoyre");
+    konge1.style.display = ("none");
+    konge2.classList.add("inn-venstre");
+}
+
+// Viser butlerens neste svar til kongen
+function nesteButlerBoble2() {
+    
+    konge2.classList.remove("inn-venstre");
+    butler2.classList.add("inn-hoyre");
+}
+
+// Viser kongens siste til butleren
+function nesteKongeBoble2() {
+    let kongeLast = konge3.classList.add("inn-venstre");
+    let startKnapp = document.querySelector(".start-knapp");
+    
+    butler2.classList.remove("inn-hoyre");
+    butler2.classList.add("ut-hoyre");
+    //konge3.classList.add("inn-venstre");
+    kongeLast;
+
+    if(kongeLast = true) {
+        startKnapp.style.display = ("block");
+    }
 }

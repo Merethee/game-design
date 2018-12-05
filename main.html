@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hovedsiden</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="mal.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="hangman.css">
 </head>
 <body>
     <div class="burgermenu">
@@ -16,18 +18,20 @@
         <span></span>
         <span></span>
     </div>
-    <section class="menuwrapper">
-        <div class="menuborder">
+    <div class="menuwrapper">
             <h1>MENY</h1>
             <ul>
                 <li><a href="#">Butikk</a></li>
                 <li><a href="#">Innstillinger</a></li>
                 <li><a href="#">Instrukser</a></li>
-                <li><a href="#">Avslutt spillet</a></li>
-                <li class="resumebtn"><a href="#">Fortsett spillet</a></li>
+                <div class="avslutt">
+                <li><a href="start.html">Avslutt spillet</a></li>
+                </div>
+                <div class="resumebtn">
+                <li><a href="#">Fortsett spillet</a></li>
+            </div>
             </ul>
         </div>
-    </section>
     <div class="instruks">
         <h4>Slik starter du</h4>
         <ol>
@@ -65,17 +69,80 @@
     </div>
     <div class="kart">
         <img src="img/map.png" alt="kart">
-            <div id="nord"></div>
-            <div id="ost"></div>
-            <div id="vest"></div>
-            <div id="sor"></div>
+            <div id="nord">
+                <div class="dot"></div>
+            </div>
+            <div id="ost">
+                <div class="dot"></div>
+            </div>
+            <div id="vest">
+                 <div class="vDot">
         </div>
-    </div>
+            </div>
+            <div id="sor">
+                <div class="dot"></div>
+            </div>
+        </div>
+        <main class="hangmanwrapper">
+            <h1>Vest-Europa</h1>
+            <img src="img/berlinerdom.jpg" alt="Pic of Berliner Dom" style="width:540px;height:auto;">
+            <h2>Hva heter den kjente bygningen i bildet?</h2>
+            
+            <div class="answerwrapper">
+                <div class="berlinerdom"></div>
+                <div class="berlinerdom"><p>E</p></div>
+                <div class="berlinerdom"></div>
+                <div class="berlinerdom"><p>I</p></div>
+                <div class="berlinerdom"></div>
+                <div class="berlinerdom"></div>
+                <div class="berlinerdom"><p>E</p></div>
+                <div class="berlinerdom"></div>
+                <div class="berlinerdom"></div>
+                <div class="berlinerdom"><p>O</p></div>
+                <div class="berlinerdom"></div>
+            </div>
+    
+            <div class= optionswrapper>
+                <div class="optbox"><p>G</p></div>
+                <div class="optbox"><p>B</p></div>
+                <div class="optbox"><p>A</p></div>
+                <div class="optbox"><p>Q</p></div>
+                <div class="optbox"><p>R</p></div>
+                <div class="optbox"><p>Z</p></div>
+                <div class="optbox"><p>E</p></div>
+                <div class="optbox"><p>M</p></div>
+                <div class="optbox"><p>H</p></div>
+                <div class="optbox"><p>N</p></div>
+                <div class="optbox"><p>I</p></div>
+                <div class="optbox"><p>J</p></div>
+                <div class="optbox"><p>O</p></div>
+                <div class="optbox"><p>F</p></div>
+                <div class="optbox"><p>L</p></div>
+                <div class="optbox"><p>V</p></div>
+                <div class="optbox"><p>C</p></div>
+                <div class="optbox"><p>U</p></div>
+                <div class="optbox"><p>D</p></div>
+                <div class="optbox"><p>T</p></div>
+            </div>
+
+            <div class="reward">
+                <div class="coins">
+                    <p>60</p><img src="img/Coins.png" style="width: 25px; height: 25px;">
+                </div>
+                <div class="merke">
+                    <p>1</p><img src="img/s.png" style="width: 29px; height: auto;">
+                </div>
+            </div>
+    
+            <p class="pagecounter">2 / 5</p>
+        </main>
+
     <div class="butler-kart">
         <img src="img/butler_top.png" alt="butler">
     </div>
 
     <script src="main.js"></script>
     <script src="menu.js"></script>
+   
 </body>
 </html>

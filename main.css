@@ -17,7 +17,7 @@
 }
 
 .kart.zoom-sor {
-    transform: scale(1.8) translate(0, -300px);
+    transform: scale(1.8) translate(60px, -300px);
 }
 
 .kart.zoom-ost {
@@ -37,19 +37,29 @@
     position: absolute; 
     bottom: -10px;
     right: 50px; 
+    animation: fadeup 3s;
+}
+
+@keyframes fadeup {
+    from { 
+        transform: translateY(140px); 
+    }
+    to { 
+        transform: translateY(0); 
+    }
 }
 
 .butler-kart img{
     width: 140px;
     height: auto;
+    filter: drop-shadow( 0px 1px 1px #96bac4);
 }
 
 .kart #nord {
-    width: 580px;
+    width: 620px;
     height: 350px;
     position: absolute;
     top: 0; 
-    /* background: rgba(0, 81, 255, 0.158); */
 }
 
 .kart #ost {
@@ -57,7 +67,7 @@
     height: 300px;
     position: absolute;
     top: 250px; 
-    left: 550px; 
+    left: 500px; 
 }
 
 .kart #vest {
@@ -69,7 +79,7 @@
 }
 
 .kart #sor {
-    width:650px;
+    width:700px;
     height: 150px;
     position: absolute;
     top: 550px; 
@@ -77,19 +87,63 @@
 }
 
 /* spørsmål prikkene */
-
- /* #nord .dot {
-    position: absolute;
-    top: 255px;
-    left: 395px; 
-
+.dot {
     width: 15px;
     height: 15px;
     border-radius: 50px;
-    background: black; 
-    cursor: pointer;
-    visibility: hidden;
-} */
+    cursor: pointer; 
+    filter: drop-shadow(0 1px 2px rgba(34, 34, 34, 0.60));  
+    background: #d4ccb8; 
+    animation: scale 2s ease-in-out infinite;
+}
+
+#sor .dot {
+    position: absolute;
+    top: 70px;
+    left: 80px; 
+} 
+
+#ost .dot {
+    position: absolute;
+    top: 200px;
+    left: 100px; 
+}
+
+.vDot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    cursor: pointer;   
+    position: absolute;
+    top: 110px;
+    left: 320px; 
+    background: #d4ccb8;  
+    filter: drop-shadow(0 1px 2px rgba(34, 34, 34, 0.60));  
+
+    animation: scale 2s ease-in-out infinite;
+}
+#nord .dot {
+    position: absolute;
+    top: 160px;
+    left: 20px; 
+  
+}
+
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 /* start spill rute */ 
 
@@ -101,35 +155,46 @@
     z-index: 1; 
 
     position: absolute;
-    top: 210px; 
+    top: 190px; 
     left: 450px; 
     visibility: visible; 
+    animation: pop 1s;
 }
 
+@keyframes pop  {
+    from { 
+       
+        transform: scale(0.8); 
+    }
+    to { 
+        
+        transform: scale(1) 
+    }
+}
+ 
 .instruks:after {
     content: ""; 
-    width: 420px;
-    height: 300px;
+    width: 470px;
+    height: 350px;
     border: 2px solid #003E5D;
-    padding: 20px; 
     position: absolute;
-    top: 17px;  
-    left: 17px; 
+    top: 14px;  
+    left: 13px; 
 }
 
 .instruks h4 {
     margin-left: 60px; 
-    margin-top: 50px; 
+    margin-top: 60px; 
 }
 
 .instruks ol {
-    margin-top: -20px; 
+    margin-top: 40px; 
 }
 
 .instruks li {
     margin-left: 60px; 
     font-size: .8rem; 
-    line-height: 1em; 
+    line-height: 1.6em; 
 }
 
 .klar-btn {
@@ -158,32 +223,11 @@
     color: white; 
 }
 
-/* ham meny */ 
-
-.meny {
-    position: absolute; 
-    right: 0; 
-    margin: 15px; 
-    cursor: pointer;
-    z-index: 1200; 
-}
-
-.meny span {
-    background: #222; 
-    display: block;
-    width: 33px;
-    height: 4px;
-
-    margin-bottom: 5px;
-    border-radius: 3px;
-}
-
 /* tekst */
 
 p {
     font-size: .7rem; 
     position: absolute;
-    
 }
 
 .total p {
@@ -241,7 +285,20 @@ p {
     margin: 10px; 
     z-index: 1000; 
     display: none; 
-    opacity: 0;
+}
+
+.merker.smooth {
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { 
+        opacity: 0;
+        transform: translateY(-10px); 
+    }
+    to { opacity: 1;
+        transform: translateY(0) 
+    }
 }
 
 .merker img,
@@ -262,7 +319,6 @@ p {
 .total img {
     margin-bottom: 20px; 
     filter: drop-shadow( 0px 1px 1px #96bac4);
-
 }
 
 .fly img {

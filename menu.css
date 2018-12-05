@@ -4,6 +4,7 @@
     right: 0; 
     margin: 15px; 
     cursor: pointer;
+    z-index: 9999;
 }
 
 .burgermenu span {
@@ -17,65 +18,113 @@
 
 /* menu box div */
 .menuwrapper {
-    width: 850px;
-    height: 670px;
-    background-color: #B4977D;
-    margin-top: 50px;
-    margin-left: 1450px;
+    width: 700px;
+    height: 450px;
+    background-color: #fff; 
+    margin-top: 150px;
+    margin-left: 360px;
     transition: ease 0.5s;
-    z-index: 100;
-}
 
-.menuwrapper1 {
-    margin: auto;
-    transition: ease 0.5s;
+    z-index: 3000;
+    filter: drop-shadow(0 1px 2px #222);
+    display: none; 
 }
 
 /* white border inside menu window */
-.menuborder {
-    width: 780px;
-    height: 595px;
-    border: 2px solid white;
-    margin: auto;
-    margin-top: 37px;
+.menuwrapper:after {
+    content: ""; 
+    width: 670px;
+    height: 420px;
+    border: 2px solid #003E5D; 
+    position: absolute;
+    top: 14px;  
+    left: 14px; 
 }
 
+.menuwrapper .resumebtn li a {
+    position: absolute;
+    top: 360px; 
+    left: 273px;  
+    z-index: 4000; 
+}
+
+.menuwrapper .avslutt li a {
+    position: absolute; 
+    top: 275px; 
+    left: 280px;
+    z-index: 4000; 
+}
+
+
 /* menu header */
-h1 {
-    margin-top: 3rem;
-    font-size: 2.2rem;
+.menuwrapper h1 {
+    margin-top: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
     text-align: center;
-    color: #422120;
+    color: #222; 
 }
 
 /* menu content */
-ul {
+.menuwrapper ul {
     list-style-type: none;
     padding: 0;
     margin: 0 auto;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
 }
 
-li {
-    margin-bottom: 1.5rem;
+.menuwrapper li {
+    margin-bottom: 1rem;
 }
 
-li a {
+
+.menuwrapper li a {
     text-decoration: none;
-    color: #422120;
+    color: #222; 
 }
 
-li:nth-child(1) {
+.menuwrapper li:nth-child(1) {
+    margin-top: 2.4rem;
+}
+
+.menuwrapper li:nth-child(5) {
     margin-top: 3rem;
 }
 
-li:nth-child(5) {
-    margin-top: 5rem;
+.menuwrapper li a:hover {
+    cursor: pointer;
+    color: #003E5D; 
+    text-decoration: underline; 
 }
 
-li a:hover {
-    cursor: pointer;
-    color: white;
+/* animasjon */
+
+.menuwrapper.open {
+    animation: open 1s;
 }
+
+@keyframes open  {
+    from { 
+        transform: scale(0.8); 
+    }
+    to {
+        transform: scale(1) 
+    }
+}
+
+
+/* .menuwrapper.close {
+    animation: close 1s;
+}
+
+@keyframes close  {
+    from { 
+        opacity: 1;
+        transform: scale(1); 
+    }
+    to { opacity: 0;
+        transform: scale(0.5); 
+    }
+}  */
+
