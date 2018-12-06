@@ -31,6 +31,7 @@ function nesteButlerBoble2() {
 function nesteKongeBoble2() {
     let kongeLast = konge3.classList.add("inn-venstre");
     let startKnapp = document.querySelector(".start-knapp");
+    let hoppOver = document.querySelector(".hopp-over");
     
     butler2.classList.remove("inn-hoyre");
     butler2.classList.add("ut-hoyre");
@@ -39,5 +40,6 @@ function nesteKongeBoble2() {
 
     if(kongeLast = true) {
         startKnapp.style.display = ("block");
-    }
+        hoppOver.style.display = ("none");
+    } 
 }
