@@ -22,6 +22,9 @@ let ansBoxAll = document.querySelector('.berlinerdom');
 let hasLetterL = false;
 let hasLetterN = false;
 
+//
+var arrowTo = document.querySelector('.arrow-to'); 
+
 //event listeners for letter l and n in option boxes
 optBoxLElm.addEventListener('click', showLetterL);
 optBoxNElm.addEventListener('click', showLetterN);
@@ -44,5 +47,7 @@ function showLetterL(event){
 function greenGlow() {
     if((hasLetterN == true)&&(hasLetterL == true)) {
         ansWrapper.classList.add('green');
+        arrowTo.style.visibility = "visible"; 
     }
+
 }

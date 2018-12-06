@@ -25,7 +25,7 @@ klar.addEventListener("click", removeWindow);
 
 // instruks popup 
 function removeWindow() {
-       instruks.style.visibility = "hidden";
+       instruks.style.display = "none";
        allowMapInput = true; 
 } 
 
@@ -72,25 +72,61 @@ function zoomMap(position){
     }
 }
 
-
-// Vest Europa - spørsmål 
+// Vest Europa - spørsmål en
 
 var vestDot = document.querySelector(".vDot"); 
-var hangman = document.querySelector(".hangmanwrapper"); 
+var hovedstat = document.querySelector(".hovedstat"); 
 
-vestDot.addEventListener("click", questionVest);
+vestDot.addEventListener("click", questionOne);
 
-function questionVest() {
+function questionOne() {
     
-    zoomMap('zoom-vest');
+    allowMapInput = false;
 
-    hangman.classList.add("ruteanim"); 
+    hovedstat.classList.add("ruteanim"); 
 
-    if(hangman.style.display !== "block") { 
-        hangman.style.display = "block"; 
+    if(hovedstat.style.display !== "block") { 
+        hovedstat.style.display = "block"; 
     } else {
-    hangman.style.display = "none"; 
-    }
-
+        hovedstat.style.display = "none"; 
+    }    
 }    
 
+// Vest Europa - spørsmål to
+
+var nextQuestion = document.querySelector(".arrow"); 
+var hangman = document.querySelector(".hangmanwrapper"); 
+
+nextQuestion.addEventListener("click", questionTwo);
+
+function questionTwo() {
+
+    allowMapInput = false;
+
+    if(hangman.style.display != "block") { 
+        hangman.style.display = "block"; 
+    } else {
+        hangman.style.display = "none"; 
+    }
+}
+
+// lukk spørsmål rutene og poeng dukker opp i sidemeny
+
+var quit = document.querySelector(".arrow-to"); 
+var pengePoeng = document.querySelector(".penge-poeng");
+var europaPoeng = document.querySelector(".e-poeng"); 
+var vestPoeng = document.querySelector(".v-poeng"); 
+
+
+quit.addEventListener("click", quitQuestion);
+
+function quitQuestion() { 
+
+    hovedstat.style.display = "none"; 
+    hangman.style.display = "none";
+    allowMapInput = true; 
+
+   pengePoeng.innerHTML = "60";
+   europaPoeng.innerHTML = "2"; 
+   vestPoeng.innerHTML = "2"; 
+}
