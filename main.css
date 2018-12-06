@@ -214,24 +214,30 @@
     margin: 10px auto; 
     border-radius: 25px; 
 
+    color: #003e5d;
+   font-size: .7rem;
+   font-weight: 400;
+
     position: absolute;
     top: 280px; 
     left: 180px; 
-    box-shadow: 0px 1px 2px #c7c7c7;
+    box-shadow: 0px 1px 5px #bfc5c7;
     cursor: pointer;
     z-index: 3; 
+    padding-top: 12px; 
 }
 
-.klar-btn p {
+ .klar-btn span {
     margin-left: 25px; 
-    margin-top: 10px; 
+    margin-top: 25px; 
     font-size: .7rem;  
-}
+} 
 
-.klar-btn:hover {
+ .klar-btn:hover {
     background: #003E5D;
     color: white; 
-}
+} 
+
 
 /* tekst */
 
