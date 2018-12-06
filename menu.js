@@ -19,8 +19,6 @@ function openSideBar(event){
 
 function closeSideBar(event){
 
-    // menu.classList.add("close");
-
     if(menu.style.display !== "block") { 
         menu.style.display = "block"; 
     } else {

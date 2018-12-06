@@ -1,18 +1,43 @@
+
+var berlin = document.getElementById("rigth");
+var munchen = document.getElementById("wrong");
+var hamburg = document.getElementById("wrong1"); 
+var bronn = document.getElementById("wrong2"); 
+var arrow = document.querySelector(".arrow"); 
+
 function rigthAnswer() {
-    document.getElementById("rigth").style.borderColor = "limegreen";
+   berlin.style.borderColor = "limegreen";
+
+   if(berlin = "limegreen") {
+       arrow.style.visibility = "visible"; 
+   }
 }
 
 function barcaAnswer() {
-    document.getElementById("wrong").style.borderColor = "red";
-    document.getElementById("rigth").style.borderColor = "limegreen";
-}
+    munchen.style.borderColor = "red";
+    berlin.style.borderColor = "limegreen";
+
+    if(berlin = "limegreen") {
+        arrow.style.visibility = "visible"; 
+    }
+ }
 
 function grandAnswer() {
-    document.getElementById("wrong1").style.borderColor = "red";
-    document.getElementById("rigth").style.borderColor = "limegreen";
-}
+    hamburg.style.borderColor = "red";
+    berlin.style.borderColor = "limegreen";
+
+    if(berlin = "limegreen") {
+        arrow.style.visibility = "visible"; 
+    }
+ }
 
 function bronAnswer() {
-    document.getElementById("wrong2").style.borderColor = "red";
-    document.getElementById("rigth").style.borderColor = "limegreen";
+    bronn.style.borderColor = "red";
+    berlin.style.borderColor = "limegreen";
+
+    if(berlin = "limegreen") {
+        arrow.style.visibility = "visible"; 
+    }
 }
+
+

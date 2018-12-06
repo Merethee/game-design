@@ -8,25 +8,23 @@ main::after {
     width: 820px;
     height: 95%;
     border: 1px solid #2a6441;
-    z-index: 1;
 }
 
 
 /* Hovedboksen */
-
-
-main {
+.hovedstat {
     background-color: white;
     width: 850px;
     height: 700px;
     margin: 50px auto;
     position: relative;
-    box-shadow: 2px 2px 4px #9cb9c2;
+    filter: drop-shadow(0 1px 2px #222);
+    display: none;
 }
 
 /* Vest-Europa overskrift */
 
-.sor {
+.hovedstat .sor {
     position: absolute;
     top: 35px;
     left: 370px;
@@ -36,7 +34,7 @@ main {
 
 /* Bildet */
 
-img {
+.hovedstat img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -75,7 +73,7 @@ img {
     border: 2px solid #003e5d;
 }
 
-.button {
+.hovedstat .button {
     padding: 7px;
     width: 265px;
     height: 50px;
@@ -91,11 +89,11 @@ img {
     cursor: pointer;
 }
 
-.button:hover {
+.hovedstat .button:hover {
     border: 1px solid white;
 }
 
-.button1 {
+.hovedstat .button1 {
     padding: 7px;
     width: 265px;
     height: 50px;
@@ -111,7 +109,7 @@ img {
     cursor: pointer;
 }
 
-.button1:hover {
+.hovedstat .button1:hover {
     border: 1px solid white;
 }
 
@@ -126,7 +124,7 @@ h1 {
 
 /* Det som viser hva du får i belønning om du klarer oppgaven, merke og penger */
 
-.reward {
+.hovedstat .reward {
     position: absolute;
     height: 80px;
     width: 120px;
@@ -134,7 +132,7 @@ h1 {
     left: 17px;
 }
 
-.reward p {
+.hovedstat .reward p {
     font-weight: 300;
     display: inline-block;
     margin-top: 10px;
@@ -142,14 +140,13 @@ h1 {
     margin-bottom: 0px;
 }
 
-
-.coins img {
+.hovedstat .coins img {
     position: absolute;
     bottom: 38px;
     left: 7px;
 }
 
-.merke img {
+.hovedstat .merke img {
     position: absolute;
     bottom: -1px;
     left: 4px;
@@ -166,4 +163,18 @@ h1 {
     position: absolute;
     right: 25px;
     bottom: 2px;
+}
+
+
+.arrow {
+    position: absolute;
+    right: 50px;
+    top: 400px;
+    font-size: 70px;
+    visibility: hidden;
+    z-index: 5000;
+}
+
+.arrow:hover {
+    cursor: pointer;
 }
