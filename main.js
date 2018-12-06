@@ -122,9 +122,11 @@ quit.addEventListener("click", quitQuestion);
 
 function quitQuestion() { 
 
+    allowMapInput = true; 
+    
     hovedstat.style.display = "none"; 
     hangman.style.display = "none";
-    allowMapInput = true; 
+    vestDot.style.backgroundColor ="#928c7f"; 
 
    pengePoeng.innerHTML = "60";
    europaPoeng.innerHTML = "2"; 

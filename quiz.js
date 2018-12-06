@@ -1,16 +1,18 @@
 
-var berlin = document.getElementById("rigth");
-var munchen = document.getElementById("wrong");
-var hamburg = document.getElementById("wrong1"); 
-var bronn = document.getElementById("wrong2"); 
+var berlin = document.getElementById("rigth")
+var munchen = document.getElementById("wrong")
+var hamburg = document.getElementById("wrong1") 
+var bronn = document.getElementById("wrong2")
 var arrow = document.querySelector(".arrow"); 
 
 function rigthAnswer() {
+ 
    berlin.style.borderColor = "limegreen";
 
    if(berlin = "limegreen") {
        arrow.style.visibility = "visible"; 
-   }
+
+   } 
 }
 
 function barcaAnswer() {
@@ -19,7 +21,7 @@ function barcaAnswer() {
 
     if(berlin = "limegreen") {
         arrow.style.visibility = "visible"; 
-    }
+       }
  }
 
 function grandAnswer() {
@@ -28,7 +30,7 @@ function grandAnswer() {
 
     if(berlin = "limegreen") {
         arrow.style.visibility = "visible"; 
-    }
+       }
  }
 
 function bronAnswer() {
@@ -37,7 +39,7 @@ function bronAnswer() {
 
     if(berlin = "limegreen") {
         arrow.style.visibility = "visible"; 
-    }
+       }
 }
 
 
