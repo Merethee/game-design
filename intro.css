@@ -189,7 +189,7 @@ body {
     width: 150px;
     height: 60px;
     border-radius: 50px;
-    border: none;
+    border: 1px solid #003e5d;
     background-color: white;
     box-shadow: 0px 1px 10px #719eac;
 
@@ -211,17 +211,6 @@ body {
     }
 }
 
-.start-knapp::after {
-    content: "";
-    position: absolute;
-    left: 3.5%;
-    top: 6%;
-    width: 138px;
-    height: 50px;
-    border-radius: 30px;
-    border: 1px solid #003e5d;
-}
-
 /* Hopp-over-knapp */
 .hopp-over {
     cursor: pointer;
@@ -234,7 +223,7 @@ body {
     height: 40px;
     width: 130px;
     border-radius: 25px;
-    border: none;
+    border: 1px solid #003e5d;
     background-color: white;
 
     position: absolute;
@@ -243,27 +232,14 @@ body {
     box-shadow: 0px 1px 10px #719eac;
 }
 
-/* Lager border på innsiden */
-.hopp-over::after {
-    content: "";
-    position: absolute;
-    right: 3%;
-    bottom: 10%;
-    width: 120px;
-    height: 30px;
-    border-radius: 20px;
-    border: 1px solid #003e5d;
-    /* border: 1px solid white; */
-}
-
 /* lager >>-ikonet på hover */
-.hopp-over span:after {
+.hopp-over span:after, .start-knapp span:after {
     content: '\00bb';
     opacity: 0;
     transition: .5s;
 }
 
-.hopp-over:hover span:after {
+.hopp-over:hover span:after, .start-knapp:hover span:after {
     opacity: 1;
     margin-left: 8px;
 }
