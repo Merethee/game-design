@@ -108,5 +108,25 @@ function questionTwo() {
     } else {
         hangman.style.display = "none"; 
     }
+}
 
+// lukk spørsmål rutene og poeng dukker opp i sidemeny
+
+var quit = document.querySelector(".arrow-to"); 
+var pengePoeng = document.querySelector(".penge-poeng");
+var europaPoeng = document.querySelector(".e-poeng"); 
+var vestPoeng = document.querySelector(".v-poeng"); 
+
+
+quit.addEventListener("click", quitQuestion);
+
+function quitQuestion() { 
+
+    hovedstat.style.display = "none"; 
+    hangman.style.display = "none";
+    allowMapInput = true; 
+
+   pengePoeng.innerHTML = "60";
+   europaPoeng.innerHTML = "2"; 
+   vestPoeng.innerHTML = "2"; 
 }
