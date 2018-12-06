@@ -6,14 +6,14 @@
 .shopwrapper {
     background-color: white;
     width: 700px;
-    height: 450px;
+    height: 530px;
 
     position: absolute;
-    top: 15px; 
-    left: 260px; 
-    box-shadow: 2px 2px 4px #9cb9c2;
+    top: 100px; 
+    left: 360px; 
+    filter: drop-shadow(0 1px 2px #222);
     z-index: 100;
-    /*display: none;*/
+    display: none;
 }
 
 /* Linjene på innsiden av boksen */
@@ -23,31 +23,31 @@
     top: 14px;
     left: 14px;
     width: 670px;
-    height: 93%;
+    height: 94%;
     border: 1px solid #003e5d;
     z-index: -10;
 }
 
-h1 {
+.shopwrapper h1 {
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 /* Flybillett */
-.fb {
+.flybillett .fb {
     display: block;
     margin: 0 auto;
     z-index: 5;
-    filter: drop-shadow(0px 1px 10px #d8d8d8);
+    filter: drop-shadow(0px 1px 2px #d8d8d8);
 }
 
-.fb:hover {
+.flybillett .fb:hover {
     cursor: pointer;
 }
 
-.fbcoins {
+.flybillett .fbcoins {
     display: inline-block;
     margin-top: 1%;
     margin-left: 45%;
@@ -83,26 +83,26 @@ h1 {
 }
 
 /* merkediv */
-.merke {
+.merkebox .merke {
     display: block;
     /*box-shadow: 0px 1px 10px #64696b;*/
-    filter: drop-shadow(0px 1px 10px #b8b8b8);
+    filter: drop-shadow(0px 1px 2px #b8b8b8);
 }
 
 /*.merke > img {
     box-shadow: 0px 1px 10px #64696b;
 }*/
 
-.merke:hover {
+.merkebox  .merke:hover {
     cursor: pointer;
 }
 
-.coins {
+.merkebox .coins {
     display: inline-block;
     margin-left: 15px;
 }
 
-p {
+.merkecontainer  p {
     display: inline-block;
 }
 
@@ -121,7 +121,7 @@ p {
 
 /* felles tag for egne diver */
 
-.utstyrsbox {
+.butlercontainer .utstyrsbox {
     height: 100px;
     width: 100px;
     margin-left: 30px;
@@ -130,54 +130,54 @@ p {
 }
 
 /* butlerutstyr */
-.hansker {
+.utstyrsbox  .hansker {
     display: block;
     margin-left: 5px;
-    filter: drop-shadow(0px 1px 10px #d3d3d3);
+    filter: drop-shadow(0px 1px 2px #d3d3d3);
 }
-.hansker:hover {
+.utstyrsbox  .hansker:hover {
     cursor: pointer;
 }
 
-.hatt {
+.utstyrsbox  .hatt {
     display: block;
     margin-top: 20px;
-    filter: drop-shadow(0px 1px 10px #d3d3d3);
+    filter: drop-shadow(0px 1px 2px #d3d3d3);
 }
-.hatt:hover {
+.utstyrsbox .hatt:hover {
     cursor: pointer;
 }
 
-.handkle {
+.utstyrsbox  .handkle {
     display: block;
     margin-left: 13px;
-    filter: drop-shadow(0px 1px 10px #d3d3d3);
+    filter: drop-shadow(0px 1px 2px #d3d3d3);
 }
-.handkle:hover {
+.utstyrsbox  .handkle:hover {
     cursor: pointer;
 }
 
-.dress {
+.butlercontainer  .dress {
     display: block;
     margin-left: 10px;
-    filter: drop-shadow(0px 1px 10px #d3d3d3);
+    filter: drop-shadow(0px 1px 2px #d3d3d3);
 }
-.dress:hover {
+.utstyrsbox   .dress:hover {
     cursor: pointer;
 }
 
 /* tilbakeknapp */
-h2 {
+.tilbake h2 {
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1rem;
+    margin-top: 2.7rem;
     width: 80px;
 }
 
-h2:hover {
+.tilbake h2:hover {
     cursor: pointer;
     color: #003e5d; 
     border-bottom: 1px solid #003e5d;
@@ -185,7 +185,7 @@ h2:hover {
 }
 
 /* coins at butler row */
-.bcoins {
-    bottom: 0;
+.utstyrsbox  .bcoins {
+    margin-top: 10px; 
     margin-left: 10px;
 }

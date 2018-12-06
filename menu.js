@@ -6,6 +6,7 @@ let menu = document.querySelector(".menuwrapper");
 burgerElm.addEventListener('click', openSideBar);
 backElm.addEventListener('click', closeSideBar);
 
+// Open menu
 function openSideBar(event){
 
     menu.classList.add("open");
@@ -17,6 +18,7 @@ function openSideBar(event){
     }
 }
 
+// Close menu
 function closeSideBar(event){
 
     if(menu.style.display !== "block") { 
@@ -25,5 +27,42 @@ function closeSideBar(event){
            menu.style.display = "none"; 
     }
 
+}
+
+// Open store
+
+var klikkPåButikk = document.querySelector(".butikk");
+var butikk = document.querySelector(".shopwrapper"); 
+
+klikkPåButikk.addEventListener("click", openStore);
+
+function openStore() {
+   
+    menu.classList.remove("open");
+
+    if(butikk.style.display !== "block") { 
+        butikk.style.display = "block"; 
+        menu.style.display = "none"; 
+ 
+    } else {
+           butikk.style.display = "none"; 
+      
+    }
+
+}
+
+// tilbake til meny
+
+var tilbake = document.querySelector(".tilbake"); 
+tilbake.addEventListener("click", backToMenu);
+
+function backToMenu() {
+
+    if(menu.style.display !== "block") { 
+        menu.style.display = "block"; 
+        butikk.style.display = "none"; 
+    } else {
+           menu.style.display = "none"; 
+    }
 }
 

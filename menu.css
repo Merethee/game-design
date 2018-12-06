@@ -27,7 +27,7 @@
 
     z-index: 3000;
     filter: drop-shadow(0 1px 2px #222);
-    display: none; 
+    display: none;
 }
 
 /* white border inside menu window */
@@ -43,15 +43,23 @@
 
 .menuwrapper .resumebtn li a {
     position: absolute;
-    top: 360px; 
+    top: 370px; 
     left: 273px;  
     z-index: 4000; 
 }
 
 .menuwrapper .avslutt li a {
     position: absolute; 
-    top: 275px; 
-    left: 280px;
+    top: 282px; 
+    left: 278px;
+    z-index: 4000; 
+}
+
+
+.menuwrapper .butikk li a {
+    position: absolute; 
+    top: 150px; 
+    left: 312px;
     z-index: 4000; 
 }
 
@@ -85,7 +93,7 @@
 }
 
 .menuwrapper li:nth-child(1) {
-    margin-top: 2.4rem;
+    margin-top: 4rem;
 }
 
 .menuwrapper li:nth-child(5) {
@@ -95,7 +103,7 @@
 .menuwrapper li a:hover {
     cursor: pointer;
     color: #003E5D; 
-    text-decoration: underline; 
+    border-bottom: 1px solid #003e5d;
 }
 
 /* animasjon */
