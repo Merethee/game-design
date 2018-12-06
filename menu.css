@@ -18,7 +18,7 @@
 
 /* menu box div */
 .menuwrapper {
-    width: 700px;
+    width: 600px;
     height: 450px;
     background-color: #fff; 
     margin-top: 150px;
@@ -34,7 +34,7 @@
 /* white border inside menu window */
 .menuwrapper:after {
     content: ""; 
-    width: 670px;
+    width: 570px;
     height: 420px;
     border: 1px solid #003E5D; 
     position: absolute;
