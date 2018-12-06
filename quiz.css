@@ -1,3 +1,5 @@
+/* Linjene inni Hovedboksen */
+
 main::after {
     content: "";
     position: absolute;
@@ -22,7 +24,7 @@ main {
     box-shadow: 2px 2px 4px #9cb9c2;
 }
 
-/* Det som forklarer hvor du er i kontintenet */
+/* Vest-Europa overskrift */
 
 .sor {
     position: absolute;
@@ -32,7 +34,7 @@ main {
     font-weight: 300;
 }
 
-/* Bildene */
+/* Bildet */
 
 img {
     display: block;
@@ -113,6 +115,8 @@ img {
     border: 1px solid white;
 }
 
+/* Spørsmål overskrift */
+
 h1 {
     font-size: 1rem;
     font-weight: 300;
@@ -151,9 +155,12 @@ h1 {
     left: 4px;
 }
 
-/* page counter */
+
+
+/* Page counter */
+
+
 .pagecounter {
-    /*border: 1px solid red;*/
     color: #003e5d;
     display: inline block;
     position: absolute;
