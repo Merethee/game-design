@@ -33,11 +33,6 @@ body {
 /* Konge og Butler */
 .konge, .butler { width: 170px; }
 
-.konge img, .butler img {
-    width: 170px;
-    height: auto;
-}
-
 .konge { animation: move-from-left 1.5s cubic-bezier(.30, .01, .39, 1.35); }
 .butler { animation: move-from-right 1.6s cubic-bezier(.30, .01, .50, 1.35); }
 
@@ -46,7 +41,6 @@ body {
         margin-left: -20px;
         margin-bottom: 750px;
     }
-    
     100% {
         margin-left: 0px;
         margin-bottom: 0;
@@ -54,50 +48,26 @@ body {
 }
 
 @keyframes move-from-right {
-    0% {
+    from {
         margin-right: -20px;
         margin-bottom: 750px;
-    }
-    100% {
+    } to {
         margin-right: 0;
         margin-bottom: 0;
     }
 }
 
-.shadow-butler, .shadow-king { 
-    position: absolute;
-    width: 120px;
-    height: 2px;
-    bottom: 100px;
-    border-radius: 50%;
-    z-index: -9;
-    background-color: #93b6c0;
-    animation: shadow 1.8s cubic-bezier(.30, .01, .50, 1.35);
+.konge img, .butler img {
+    width: 170px;
+    height: auto;
+    animation: float 2s infinite;
 }
+.butler img { animation-delay: .5s; }
 
-.shadow-king { left: 297px; }
-.shadow-butler { right: 297px; }
-
-@keyframes shadow {
-    0% {
-        right: 320px;
-        height: 2px;
-        width: 50px;
-    }
-    85% { 
-        width: 0px;
-        padding-left: 0px;
-        padding-right: 0px; }
-    90% { 
-        right: 350px;
-        width: 0px; }
-    100% {
-        right: 290px;
-        height: 4px;
-        padding-left: 25px;
-        padding-right: 25px;
-        
-    }
+@keyframes float {
+    0% { margin-bottom: 3%; }
+    50% { margin-bottom: 0%; }
+    100% { margin-bottom: 3%; }
 }
 
 /* snakkebobler */
@@ -109,7 +79,35 @@ body {
 .snakkeboble-venstre { margin-bottom: 420px; }
 .snakkeboble-hoyre { margin-bottom: 370px; }
 
-.snakkeboble-konge-1, .snakkeboble-konge-2, .snakkeboble-konge-3, .snakkeboble-butler-1, .snakkeboble-butler-2 {
+/* Kongens første snakkeboble kommer frem */
+.snakkeboble-konge-1 { 
+    top: 200px; 
+    transform: scaleX(0) scaleY(0);
+    animation: kongens-befaling 1s; 
+    animation-delay: 2.5s; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes kongens-befaling {
+    from {
+        transform-origin: left;
+        transform: scaleX(0) scaleY(0);
+    } to {
+        transform: scaleX(1) scaleY(1);
+    }
+}
+
+.snakkeboble-konge-2, 
+.snakkeboble-butler-1 { top: 100px; transform: scaleX(0) scaleY(0); }
+
+.snakkeboble-konge-3, 
+.snakkeboble-butler-2 { transform: scaleX(0) scaleY(0); }
+
+.snakkeboble-konge-1, 
+.snakkeboble-konge-2, 
+.snakkeboble-konge-3, 
+.snakkeboble-butler-1, 
+.snakkeboble-butler-2 {
     width: 200px;
     height: 100px;
     border-radius: 50px;
@@ -118,11 +116,15 @@ body {
     font-size: .7rem;
     position: relative;
     box-shadow: 0px 1px 10px #719eac;
-    transition: all .4s;
+    transition: all .9s;
 }
 
 /* Piler på snakkebobler */ 
-.snakkeboble-konge-1::after, .snakkeboble-konge-2::after, .snakkeboble-konge-3::after, .snakkeboble-butler-1::after, .snakkeboble-butler-2::after  {
+.snakkeboble-konge-1::after, 
+.snakkeboble-konge-2::after, 
+.snakkeboble-konge-3::after, 
+.snakkeboble-butler-1::after, 
+.snakkeboble-butler-2::after  {
 	content: '';
 	position: absolute;
 	top: 55%;
@@ -131,19 +133,17 @@ body {
     margin-left: -17px;
 }
 
-.snakkeboble-konge-1::after, .snakkeboble-konge-2::after, .snakkeboble-konge-3::after { left: 5px; border-right-color: white; border-left: 0; }
-.snakkeboble-butler-1::after, .snakkeboble-butler-2::after { right: -10px; border-left-color: white; border-right: 0; }
+.snakkeboble-konge-1::after, 
+.snakkeboble-konge-2::after, 
+.snakkeboble-konge-3::after { left: 5px; border-right-color: white; border-left: 0; }
 
-
-.snakkeboble-konge-1 { top: 200px; transform: scaleX(1) scaleY(1); }
-.snakkeboble-konge-2 { top: 100px; transform: scaleX(0) scaleY(0); }
-.snakkeboble-konge-3 { transform: scaleX(0) scaleY(0); }
-.snakkeboble-butler-1 { top: 100px; transform: scaleX(0) scaleY(0); }
-.snakkeboble-butler-2 { transform: scaleX(0) scaleY(0); }
+.snakkeboble-butler-1::after, 
+.snakkeboble-butler-2::after { right: -10px; border-left-color: white; border-right: 0; }
 
 .ut-venstre {
     transform-origin: left;
     transform: scaleX(0) scaleY(0);
+    animation-fill-mode: backwards;
 }
 
 .inn-venstre {
@@ -161,7 +161,7 @@ body {
     transform: scaleX(1) scaleY(1);
 }
 
-#konge-tekst, #butler-tekst {
+.tekst {
     width: 170px;
     position: absolute;
     margin: 20px;
@@ -177,39 +177,53 @@ body {
     cursor: pointer;
 }
 
-.neste {
-    right: 22px;
+.neste:hover {
+    right: 21px;
 }
 
 .start-knapp {
     display: none;
 
     position: absolute;
-    width: 160px;
-    height: 70px;
-    border-radius: 50px;
-    background-color: white;
-}
-
-.start-knapp::after {
-    content: "";
-    position: absolute;
+    bottom: 200px;
     width: 150px;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 50px;
     border: 1px solid #003e5d;
+    background-color: white;
+    box-shadow: 0px 1px 10px #719eac;
+
+    color: #003e5d;
+    font-size: .8rem;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 20px;
+    cursor: pointer;
+
+    animation: start-knapp 1s;
+}
+
+@keyframes start-knapp {
+    from {
+        transform: scaleX(0) scaleY(0);
+    } to {
+        transform: scaleX(1) scaleY(1);
+    }
 }
 
 /* Hopp-over-knapp */
-button {
+.hopp-over {
     cursor: pointer;
     color: #003e5d;
     font-size: .8rem;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 9px;
 
     height: 40px;
     width: 130px;
     border-radius: 25px;
-    border: none;
+    border: 1px solid #003e5d;
     background-color: white;
 
     position: absolute;
@@ -218,26 +232,14 @@ button {
     box-shadow: 0px 1px 10px #719eac;
 }
 
-/* Lager border på innsiden */
-button::after {
-    content: "";
-    position: absolute;
-    right: 3%;
-    bottom: 10%;
-    width: 120px;
-    height: 30px;
-    border-radius: 20px;
-    border: 1px solid #003e5d;
-    /* border: 1px solid white; */
-}
-
-button span:after {
+/* lager >>-ikonet på hover */
+.hopp-over span:after, .start-knapp span:after {
     content: '\00bb';
     opacity: 0;
     transition: .5s;
 }
 
-button:hover span:after {
+.hopp-over:hover span:after, .start-knapp:hover span:after {
     opacity: 1;
     margin-left: 8px;
 }

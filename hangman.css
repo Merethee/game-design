@@ -9,10 +9,10 @@
     height: 700px;
 
     position: absolute;
-    top: 15px; 
-    left: 260px; 
-    box-shadow: 2px 2px 4px #9cb9c2;
-    /*display: none;*/
+    top: 15px;
+    left: 295px;
+    filter: drop-shadow(0 1px 2px #222);
+    display: none;
 }
 
 .hangmanwrapper.ruteanim {
@@ -38,7 +38,7 @@
     left: 14px;
     width: 820px;
     height: 95%;
-    border: 1.5px solid #003e5d;
+    border: 1px solid #2A6441;
     /*z-index: -100;*/
 }
 
@@ -178,3 +178,16 @@
     right: 25px;
     bottom: 2px;
 }
+
+.arrow-to {
+    position: absolute;
+    right: 50px;
+    top: 400px;
+    font-size: 70px; 
+    visibility: hidden;
+    z-index: 5000; 
+}
+
+.arrow-to:hover {
+    cursor: pointer;
+}   
