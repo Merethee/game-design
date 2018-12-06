@@ -162,7 +162,7 @@
     margin-left: 10px;
     filter: drop-shadow(0px 1px 2px #d3d3d3);
 }
-.utstyrsbox   .dress:hover {
+.utstyrsbox .dress:hover {
     cursor: pointer;
 }
 
@@ -188,4 +188,8 @@
 .utstyrsbox  .bcoins {
     margin-top: 10px; 
     margin-left: 10px;
+}
+
+.utstyrsbox > p {
+    display: inline-block;
 }

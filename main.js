@@ -105,6 +105,7 @@ function questionTwo() {
 
     if(hangman.style.display != "block") { 
         hangman.style.display = "block"; 
+        hovedstat.style.display = "none"; 
     } else {
         hangman.style.display = "none"; 
     }
