@@ -17,7 +17,7 @@ body {
     top: 3%;
 }
 
-.logo img { width: 220px; }
+.logo img { width: 220px; filter: drop-shadow(0px 2px 20px #97c4d3); }
 
 /* Wrapper rundt konge, snakkebobler og butler */
 .wrapper {
@@ -61,6 +61,7 @@ body {
     width: 170px;
     height: auto;
     animation: float 2s infinite;
+    filter: drop-shadow(0px 2px 20px #97c4d3);
 }
 .butler img { animation-delay: .5s; }
 
@@ -81,7 +82,8 @@ body {
 
 /* Kongens første snakkeboble kommer frem */
 .snakkeboble-konge-1 { 
-    top: 200px; 
+    top: 350px;
+    height: 260px;
     transform: scaleX(0) scaleY(0);
     animation: kongens-befaling 1s; 
     animation-delay: 2.5s; 
@@ -97,6 +99,10 @@ body {
     }
 }
 
+#til-butler {
+    font-weight: 400;
+}
+
 .snakkeboble-konge-2, 
 .snakkeboble-butler-1 { top: 100px; transform: scaleX(0) scaleY(0); }
 
@@ -109,15 +115,19 @@ body {
 .snakkeboble-butler-1, 
 .snakkeboble-butler-2 {
     width: 200px;
-    height: 100px;
     border-radius: 50px;
     background-color: white;
     color: black;
     font-size: .7rem;
     position: relative;
-    box-shadow: 0px 1px 10px #719eac;
+    box-shadow: 0px 1px 10px #97c4d3;
     transition: all .9s;
 }
+
+.snakkeboble-butler-1 { height: 100px; }
+.snakkeboble-konge-2 { height: 205px; }
+.snakkeboble-butler-2 { height: 167px; }
+.snakkeboble-konge-3 { height: 75px; width: 100px; }
 
 /* Piler på snakkebobler */ 
 .snakkeboble-konge-1::after, 
@@ -163,6 +173,7 @@ body {
 
 .tekst {
     width: 170px;
+    font-weight: 300;
     position: absolute;
     margin: 20px;
     line-height: .85rem;
@@ -177,9 +188,7 @@ body {
     cursor: pointer;
 }
 
-.neste:hover {
-    right: 21px;
-}
+.neste:hover { right: 21px; }
 
 .start-knapp {
     display: none;
@@ -191,7 +200,8 @@ body {
     border-radius: 50px;
     border: 1px solid #003e5d;
     background-color: white;
-    box-shadow: 0px 1px 10px #719eac;
+    box-shadow: 0px 1px 10px #97c4d3;
+    /* box-shadow: 0px 1px 10px #719eac; */
 
     color: #003e5d;
     font-size: .8rem;
@@ -211,14 +221,21 @@ body {
     }
 }
 
+.start-knapp:hover {
+    color: white;
+    background-color: #003e5d;
+    transition: all .4s ease;
+}
+
 /* Hopp-over-knapp */
 .hopp-over {
     cursor: pointer;
     color: #003e5d;
-    font-size: .8rem;
+    font-size: .7rem;
+    font-weight: 300;
     text-decoration: none;
     text-align: center;
-    padding-top: 9px;
+    padding-top: 11px;
 
     height: 40px;
     width: 130px;
@@ -229,17 +246,17 @@ body {
     position: absolute;
     right: 5%;
     bottom: 5%;
-    box-shadow: 0px 1px 10px #719eac;
+    box-shadow: 0px 1px 10px #89b8c7;
 }
 
 /* lager >>-ikonet på hover */
-.hopp-over span:after, .start-knapp span:after {
+.hopp-over span:after {
     content: '\00bb';
     opacity: 0;
     transition: .5s;
 }
 
-.hopp-over:hover span:after, .start-knapp:hover span:after {
+.hopp-over:hover span:after {
     opacity: 1;
     margin-left: 8px;
 }
