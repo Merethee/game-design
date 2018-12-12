@@ -5,6 +5,7 @@ var merker = document.querySelector(".merker");
 pil.addEventListener("click", showBadges);
 
 // skjuler merkene før click 
+
 function showBadges() {
 
    merker.classList.toggle('smooth');
@@ -15,7 +16,8 @@ function showBadges() {
             merker.style.display = "none"; 
         }
     } 
-    
+
+
 var allowMapInput = false;
 
 var klar = document.querySelector(".klar-btn");
@@ -24,10 +26,12 @@ var instruks = document.querySelector(".instruks");
 klar.addEventListener("click", removeWindow);
 
 // instruks popup 
+
 function removeWindow() {
        instruks.style.display = "none";
        allowMapInput = true; 
 } 
+
 
 // Zoom på kart 
 
@@ -117,7 +121,6 @@ var quit = document.querySelector(".arrow-to");
 var pengePoeng = document.querySelector(".penge-poeng");
 var europaPoeng = document.querySelector(".e-poeng"); 
 var vestPoeng = document.querySelector(".v-poeng"); 
-
 
 quit.addEventListener("click", quitQuestion);
 

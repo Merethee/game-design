@@ -12,6 +12,7 @@ main::after {
 
 
 /* Hovedboksen */
+
 .hovedstat {
     background-color: white;
     width: 850px;
@@ -44,6 +45,7 @@ main::after {
 
 
 /* Svar bokser */
+
 #svar {
     display: flex;
     justify-content: center;
@@ -152,10 +154,7 @@ h1 {
     left: 4px;
 }
 
-
-
 /* Page counter */
-
 
 .pagecounter {
     color: #003e5d;
@@ -164,7 +163,6 @@ h1 {
     right: 25px;
     bottom: 2px;
 }
-
 
 .arrow {
     position: absolute;

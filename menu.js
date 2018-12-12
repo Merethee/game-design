@@ -6,7 +6,8 @@ let menu = document.querySelector(".menuwrapper");
 burgerElm.addEventListener('click', openSideBar);
 backElm.addEventListener('click', closeSideBar);
 
-// Open menu
+// Åpne meny
+
 function openSideBar(event){
 
     menu.classList.add("open");
@@ -18,7 +19,8 @@ function openSideBar(event){
     }
 }
 
-// Close menu
+// Lukk meny
+
 function closeSideBar(event){
 
     if(menu.style.display !== "block") { 
@@ -29,7 +31,7 @@ function closeSideBar(event){
 
 }
 
-// Open store
+// Åpne butikk
 
 var klikkPåButikk = document.querySelector(".butikk");
 var butikk = document.querySelector(".shopwrapper"); 
