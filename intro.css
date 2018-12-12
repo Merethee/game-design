@@ -1,4 +1,6 @@
-* { box-sizing: border-box; }
+* { 
+    box-sizing: border-box; 
+}
 
 body {
     margin: 0;
@@ -36,10 +38,18 @@ body {
 }
 
 /* Konge og Butler */
-.konge, .butler { width: 170px; }
 
-.konge { animation: move-from-left 1.5s cubic-bezier(.30, .01, .39, 1.35); }
-.butler { animation: move-from-right 1.6s cubic-bezier(.30, .01, .50, 1.35); }
+.konge, .butler { 
+    width: 170px; 
+}
+
+.konge { 
+    animation: move-from-left 1.5s cubic-bezier(.30, .01, .39, 1.35);
+}
+
+.butler { 
+    animation: move-from-right 1.6s cubic-bezier(.30, .01, .50, 1.35);
+}
 
 @keyframes move-from-left {
     0% {
@@ -68,24 +78,40 @@ body {
     animation: float 2s infinite;
     filter: drop-shadow(0px 2px 20px #97c4d3);
 }
-.butler img { animation-delay: .5s; }
+
+.butler img {
+     animation-delay: .5s;
+}
 
 @keyframes float {
-    0% { margin-bottom: 3%; }
-    50% { margin-bottom: 0%; }
-    100% { margin-bottom: 3%; }
+    0% { 
+        margin-bottom: 3%;
+    }
+    50% { 
+        margin-bottom: 0%;
+    }
+    100% { 
+        margin-bottom: 3%;
+    }
 }
 
 /* snakkebobler */
+
 .snakkeboble-venstre, .snakkeboble-hoyre {
     width: 200px;
     height: auto;
 }
 
-.snakkeboble-venstre { margin-bottom: 420px; }
-.snakkeboble-hoyre { margin-bottom: 370px; }
+.snakkeboble-venstre { 
+    margin-bottom: 420px;
+}
+
+.snakkeboble-hoyre { 
+    margin-bottom: 370px;
+}
 
 /* Kongens første snakkeboble kommer frem */
+
 .snakkeboble-konge-1 { 
     top: 350px;
     height: 260px;
@@ -109,10 +135,15 @@ body {
 }
 
 .snakkeboble-konge-2, 
-.snakkeboble-butler-1 { top: 100px; transform: scaleX(0) scaleY(0); }
+.snakkeboble-butler-1 { 
+    top: 100px;
+     transform: scaleX(0) scaleY(0);
+}
 
 .snakkeboble-konge-3, 
-.snakkeboble-butler-2 { transform: scaleX(0) scaleY(0); }
+.snakkeboble-butler-2 { 
+    transform: scaleX(0) scaleY(0);
+}
 
 .snakkeboble-konge-1, 
 .snakkeboble-konge-2, 
@@ -129,12 +160,25 @@ body {
     transition: all .9s;
 }
 
-.snakkeboble-butler-1 { height: 100px; }
-.snakkeboble-konge-2 { height: 205px; }
-.snakkeboble-butler-2 { height: 167px; }
-.snakkeboble-konge-3 { height: 75px; width: 100px; }
+.snakkeboble-butler-1 { 
+    height: 100px;
+}
+
+.snakkeboble-konge-2 { 
+    height: 205px;
+}
+
+.snakkeboble-butler-2 {
+    height: 167px;
+}
+
+.snakkeboble-konge-3 { 
+    height: 75px;
+     width: 100px;
+}
 
 /* Piler på snakkebobler */ 
+
 .snakkeboble-konge-1::after, 
 .snakkeboble-konge-2::after, 
 .snakkeboble-konge-3::after, 
@@ -150,10 +194,18 @@ body {
 
 .snakkeboble-konge-1::after, 
 .snakkeboble-konge-2::after, 
-.snakkeboble-konge-3::after { left: 5px; border-right-color: white; border-left: 0; }
+.snakkeboble-konge-3::after { 
+    left: 5px;
+    border-right-color: white; 
+    border-left: 0;
+}
 
 .snakkeboble-butler-1::after, 
-.snakkeboble-butler-2::after { right: -10px; border-left-color: white; border-right: 0; }
+.snakkeboble-butler-2::after { 
+    right: -10px; 
+    border-left-color: white;
+    border-right: 0; 
+}
 
 .ut-venstre {
     transform-origin: left;
@@ -193,7 +245,9 @@ body {
     cursor: pointer;
 }
 
-.neste:hover { right: 21px; }
+.neste:hover { 
+    right: 21px; 
+}
 
 .start-knapp {
     display: none;
@@ -206,7 +260,6 @@ body {
     border: 1px solid #003e5d;
     background-color: white;
     box-shadow: 0px 1px 10px #97c4d3;
-    /* box-shadow: 0px 1px 10px #719eac; */
 
     color: #003e5d;
     font-size: .8rem;
@@ -233,6 +286,7 @@ body {
 }
 
 /* Hopp-over-knapp */
+
 .hopp-over {
     cursor: pointer;
     color: #003e5d;
@@ -255,6 +309,7 @@ body {
 }
 
 /* lager >>-ikonet på hover */
+
 .hopp-over span:after {
     content: '\00bb';
     opacity: 0;
